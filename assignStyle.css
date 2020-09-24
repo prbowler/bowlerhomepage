@@ -1,0 +1,82 @@
+body {
+    height: 100%;
+    width:100%;
+    background-color: rgba(17, 100, 102, 1.0);
+    background-image: url(img/background.jpg);
+}
+
+header {
+    height:150px;
+}
+
+#logo {
+    display: inline-flex;
+}
+
+#banner {
+    border:solid;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex:100%;
+    background-color:rgba(41.2, 14.5, 13.3, .50);
+    border-radius:20px;
+    border-color:rgba(88.2, 78.8, 68.6, .50);
+}
+
+#main {
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+
+#me {
+    flex:30%;
+    margin-left: 10px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+
+#assignments {
+    flex:20%;
+    margin-left: 10px;
+    background-color:rgba(200, 200, 200, .5);
+    padding:20px;
+    border-radius:20px;
+    min-width:200px;
+    max-width:fit-content;
+
+}
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10vw;
+    color: white;
+    font-style: oblique;
+    font-size: 35px;
+}
+
+h2 {
+    font-size:16px;
+}
+
+
+#hide {
+    display: none;
+}
+
+/******************* Screen Size 800px *******************************/
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 5vw;
+    }
+}
+
+/******************* Screen Size 600px *******************************/
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 4vw;
+    }
+}
