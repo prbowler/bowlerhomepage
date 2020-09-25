@@ -38,7 +38,7 @@
     </div>
 </section>
 <footer>
-    <p>Created by Philip Bowler</p>
+    <?php include 'footer.php';?>
 </footer>
 </body>
 </html>
