@@ -1,0 +1,18 @@
+div {
+    font-size: 20px;
+    font-weight: normal;
+    background-color: blue;
+    height: 50px;
+}
+
+#div1:hover {
+    font-weight: bold;
+}
+
+#div2:hover {
+    font-weight: bold;
+}
+
+#div3:hover {
+    font-weight: bold;
+}
