@@ -14,7 +14,7 @@
 <header>
     <div id="banner">
         <div id="logo">
-            <a href="index.html">
+            <a href="home.php">
                 <img class="logo" src="img/logo.jpg" alt="Logo" height="50"
                      width="50">
             </a>
@@ -27,9 +27,11 @@
         <figure>
             <img src="img/me.jpg" alt="My wife and I" width="173" height="164" id="me">
         </figure>
-        <?php
-        echo "Arizona time is " . date("h:i:sa");
-        ?>
+        <div>
+            <?php
+            echo "Arizona time and date is " . date("Y/m/d  h:i:sa");
+            ?>
+        </div>
     </div>
     <div>
         <a href="assignments.html">Assignments</a>
