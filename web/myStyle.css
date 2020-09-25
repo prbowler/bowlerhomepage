@@ -60,6 +60,14 @@ h2 {
 	font-size:16px;
 }
 
+li {
+	font-size: 16px;
+}
+
+li:hover {
+	font-size:18px;
+	font-weight: bold;
+}
 
 #hide {
 	display: none;
