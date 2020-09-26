@@ -13,12 +13,7 @@
 <body>
 <header>
     <div id="banner">
-        <div id="logo">
-            <a href="home.php">
-                <img class="logo" src="img/logo.jpg" alt="Logo" height="50"
-                     width="50">
-            </a>
-        </div>
+       <?php include 'logo.php';?>
         <h1>Philip Bowler's CSE 341 Home Page</h1>
     </div>
 </header>
