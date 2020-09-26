@@ -29,7 +29,7 @@
         </div>
     </div>
     <div>
-        <a href="assignments.html">Assignments</a>
+        <a href="assignments.php">Assignments</a>
     </div>
 </section>
 <footer>
