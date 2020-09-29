@@ -8,6 +8,7 @@ Comments: <?php echo $_POST["Comments"]; ?><br>
 Continents:
 <?php
    $continent = array($_POST["continents"]);
+   echo count($continent);
    foreach($continent as $value) {
        echo "$value <br>";
    }
