@@ -1,8 +1,8 @@
 <html>
 <body>
 
-<?php echo $_GET["name"]; ?><br>
-mailto: <?php echo $_GET["email"]; ?><br>
+<?php echo $_POST["name"]; ?><br>
+mailto: <?php echo $_POST["email"]; ?><br>
 
 
 </body>
