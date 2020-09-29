@@ -7,8 +7,8 @@ Major: <?php echo $_POST["Major"]; ?><br>
 Comments: <?php echo $_POST["Comments"]; ?><br>
 Continents:
 <?php
-   $continents = $_POST["continents"];
-   foreach($continents as $value) {
+   $continent = array($_POST["continents"]);
+   foreach($continent as $value) {
        echo "$value <br>";
    }
 ?>
