@@ -8,7 +8,7 @@ Comments: <?php echo $_POST["Comments"]; ?> <br>
 Continents:
 <?php
      foreach ($_POST['continents'] as $value) {
-         echo '$value <br>';
+         echo "$value <br>";
      }
 ?>
 </body>
