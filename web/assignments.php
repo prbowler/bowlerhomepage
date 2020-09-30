@@ -23,7 +23,7 @@
         <ul>
             <li><a href="helloworld.php">Week01</a></li>
             <li><a href="week02.php">Week02</a></li>
-            <li><a href="teach03.php">Week03</a></li>
+            <li><a href="t3.php">Week03</a></li>
             <li><a>Week04</a></li>
             <li><a>Week05</a></li>
             <li><a>Week06</a></li>

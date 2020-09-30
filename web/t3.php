@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-   <form action="teach03php.php" method="post">
+   <form action="t3php.php" method="post">
        Name: <input type="text" name="name"><br>
        E-mail: <input type="email" name="email"><br><br>
        <?php
