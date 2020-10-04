@@ -1,0 +1,57 @@
+.item {
+    display:inline-flex;
+    margin-top:20px;
+}
+
+.type {
+    display:inline-block;
+    width:150px;
+}
+
+.price {
+    display:inline-block;
+    width:75px;
+}
+
+.amount {
+    display:inline-block;
+    width:75px;
+}
+
+.total {
+    display:inline-block;
+    width:75px;
+}
+
+section {
+    margin-left:30px;
+}
+
+span.type {
+    font-weight:bolder;
+}
+
+span.price {
+    margin-left:-10px;
+    font-weight:bolder;
+}
+
+span.amount {
+    font-weight:bolder;
+}
+
+span.total {
+    font-weight:bolder;
+}
+
+#cartheader {
+    display:block;
+    margin-top:20px;
+}
+
+#total {
+    display:inline-flex;
+    margin-top:20px;
+    margin-left:241px;
+    font-weight:bolder
+}

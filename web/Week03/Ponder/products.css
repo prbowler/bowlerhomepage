@@ -1,0 +1,53 @@
+/* Photo by Rodion Kutsaev on Unsplash ---- Tomatoe
+Photo by FOODISM360 on Unsplash  ---- Broccolli
+Photo by pina messina on Unsplash --- cabage
+Photo by 王小明 on Unsplash --- bell peppers
+Photo by Harshal S. Hirve on Unsplash –cucumbers
+Photo by Gabriel Gurrola on Unsplash --- carrots*/
+
+#vegetables1 {
+    background-color:white;
+    height:350px;
+    width:50%;
+    display:inline-flex;
+    margin-left:20%;
+    margin-top:20px;
+}
+
+#vegetables2 {
+    background-color:white;
+    height:350px;
+    width:50%;
+    display:inline-flex;
+    margin-left:20%;
+    margin-top:20px;
+}
+
+div {
+    height:300px;
+    width:300px;
+    margin:10px;
+}
+
+input.add {
+    position:relative;
+    top: 0px;
+    left:10px;
+    background-color:red;
+    font-size:16px;
+    height:30px;
+}
+
+input.quan {
+    width:30px;
+}
+
+input.type {
+    width:80px;
+    border:none;
+}
+
+input.price {
+    width:50px;
+    border:none;
+}

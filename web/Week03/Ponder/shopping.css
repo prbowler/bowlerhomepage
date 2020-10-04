@@ -1,0 +1,17 @@
+/*Photo by Iñigo De la Maza on Unsplash*/
+body {
+    background-image: url("img/vegetables.jpg");
+}
+
+#main {
+    margin-top:50px;
+    margin-left:50px;
+}
+
+h1 {
+    font-style:oblique;
+    font-size:50px;
+    color:white;
+}
+
+

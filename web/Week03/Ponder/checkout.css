@@ -1,0 +1,14 @@
+input {
+    margin-top:20px;
+}
+
+textarea {
+    margin-top:20px;
+}
+
+#purchase {
+    background-color:red;
+    color:white;
+    margin-left:200px;
+
+}
