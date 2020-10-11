@@ -10,7 +10,7 @@
 try
 {
     $user = 'postgres';
-    $password = 'Fleetreelyncrook@9011';
+    $password = '';
     $db = new PDO('pgsql:host=localhost;dbname=mydb', $user, $password);
 
     //$db = new PDO('pgsql:host=localhost;dbname=myTestDB', $user, $password);
