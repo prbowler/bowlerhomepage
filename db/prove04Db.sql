@@ -3,13 +3,14 @@ ID SERIAL PRIMARY KEY,
 Name VARCHAR(50)
 );
 
-CREATE TABLE Item (
+CREATE TABLE Items (
 ID SERIAL PRIMARY KEY,
 Name VARCHAR(50) NOT NULL,
 Discription VARCHAR(80) NOT NULL,
 Price INT NOT NULL,
 Stock INT,
-CategoryID INT references Category(ID)
+CategoryID INT references Category(ID),
+Image VARCHAR(50)
 );
 
 CREATE TABLE Shopper (
