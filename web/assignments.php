@@ -26,7 +26,7 @@
             <li><a href="t3.php">Week03 Teach</a></li>
             <li><a href="Week03/Ponder/shopping.php">Week03 Ponder</a></li>
             <li><a>Week04</a></li>
-            <li><a>Week05</a></li>
+            <li><a href="ProjectA/home.php">Week05</a></li>
             <li><a>Week06</a></li>
             <li><a>Week07</a></li>
             <li><a>Week08</a></li>

@@ -24,7 +24,7 @@ Password VARCHAR(50)
 
 CREATE TABLE Cart (
 ID SERIAL PRIMARY KEY,
-ItemID INT references Item(ID),
+ItemID INT references Items(ID),
 Quantity INT NOT NULL,
 ShopperID INT references Shopper(ID)
 );
