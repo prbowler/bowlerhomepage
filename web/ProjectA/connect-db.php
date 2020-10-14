@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Card</title>
-    <link rel="stylesheet" type="text/css" href="card.css">
-</head>
-<body>
 <?php
 try
 {
@@ -23,13 +15,4 @@ catch (PDOException $ex)
 {
     echo 'Error!: ' . $ex->getMessage();
     die();
-}
-foreach ($db->query('SELECT * FROM item as i') as $row) {
-    echo
-    '<div class="card">
-            <img src="bellpeppers.jpg" alt="Bell Peppers" style="width:100%">
-            <h3>' . $row["name"] . '</h3>
-            <p class="price">$' . $row["price"] . '</p>
-            <p><button>Add to Cart</button></p>
-        </div>';
 }
