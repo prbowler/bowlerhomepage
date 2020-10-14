@@ -12,7 +12,6 @@
 <body>
 <header>
     <?php include 'banner.html'; ?>
-    <?php include 'menu.html'; ?>
 </header>
 <section id="main">
     <h1 id="welcome">Welcome to PB Prepare</h1>
