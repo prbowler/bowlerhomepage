@@ -20,7 +20,7 @@
                 <input id="firstname" type="text" value="' . $row['firstname'] .'">
                 <input id="lastname" type="text" value="' . $row['lastname'] . '"><br>
                 <input id="email" type="text" value="' . $row["email"] . '"><br>
-                <textarea id="address">' . $row["address"] . '</textarea><br>
+                <textarea id="address" name="address" rows="4" cols="50">' . $row["address"] . '</textarea><br>
             </div>
             </form>';
     }
