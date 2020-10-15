@@ -11,7 +11,7 @@
     include "banner.html";
     include "connect-db-ol.php";
 
-    foreach ($db->query('SELECT * FROM item as i WHERE categoryid = 1') as $row) {
+    foreach ($db->query('SELECT * FROM items as i WHERE categoryid = 1') as $row) {
         $image = 'img/' . $row['image'] . '.jpg';
         echo
             '<div class="card">
