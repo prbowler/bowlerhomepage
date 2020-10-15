@@ -12,12 +12,13 @@
 
     foreach ($db->query('SELECT * FROM shopper as s WHERE id = 1') as $row) {
         echo
-            '<section id="customer">
-                <div id="username">' . $row["username"] .'</div><br>
-                <div id="name">' . $row['firstname'] . ' ' . $row['lastname'] . '</div>
-                <div id="email">' . $row["email"] . '</div><br>
-                <div id="address">' . $row["address"] . '</div><br>
-            </section>';
+            '<div id="customer">
+                <input id="username" type="text" value="' . $row["username"] .'"><br>
+                <input id="firstname" type="text" value="' . $row['firstname'] .'">
+                <input id="lastname" type="text" value="' . $row['lastname'] . '"><br>
+                <input id="email" type="text" value="' . $row["email"] . '"><br>
+                <textarea id="address" value="' . $row["address"] . '"<br>
+            </div>';
     }
 ?>
 </body>
