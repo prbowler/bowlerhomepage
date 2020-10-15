@@ -15,6 +15,7 @@
         echo
             '
              <form>
+             <h2>Account information</h2>
              <div id="customer">
                 <label for="username">Username</label>
                 <input id="username" name="username" type="text" value="' . $row["username"] .'"><br>
