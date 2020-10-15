@@ -22,7 +22,7 @@
                 <p class="price">$' . $row["price"] . '</p>
                 <p><button>Remove from Cart</button></p>
                 <input class="quantity" value="'.$row["quantity"].'">
-                <p class="total">$' . $total . '</p>
+                <p class="total">Total = $' . $total . '</p>
             </div>';
     }
     echo
