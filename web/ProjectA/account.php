@@ -10,11 +10,11 @@
     include "banner.html";
     include "connect-db.php";
 
-    foreach ($db->query('SELECT * FROM shopper as s WHERE userid = 1') as $row) {
-        $image = 'img/' . $row['image'] . '.jpg';
+    foreach ($db->query('SELECT * FROM shopper as s WHERE id = 1') as $row) {
         echo
             '<section id="customer">
-                <div id="name">' . $row["name"] .'</div><br>
+                <div id="username">' . $row["username"] .'</div><br>
+                <div id="name">' . $row['firstname'] . ' ' . $row['lastname'] . '</div>
                 <div id="email">' . $row["email"] . '</div><br>
                 <div id="address">' . $row["address"] . '</div><br>
             </section>';

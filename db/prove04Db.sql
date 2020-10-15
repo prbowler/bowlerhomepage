@@ -19,6 +19,7 @@ username VARCHAR(50) NOT NULL,
 FirstName VARCHAR(50),
 LastName VARCHAR(50),
 Email VARCHAR(50),
+Address VARCHAR(100),
 Password VARCHAR(50)
 );
 

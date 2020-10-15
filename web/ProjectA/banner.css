@@ -18,8 +18,9 @@
 
 #store-name {
     position:fixed;
-    top:0px;
-    left:200px;
+    top:-5px;
+    left:150px;
+    border:black;
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-style:italic;
     color:#FFCB9A;

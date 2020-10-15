@@ -4,6 +4,8 @@
     margin: auto;
     text-align: center;
     font-family: cursive;
+    display:inline-block;
+    padding:20px;
 }
 
 .price {
@@ -25,9 +27,4 @@
 
 .card button:hover {
     background-color:darkgrey;
-}
-
-div {
-    display:inline-block;
-    padding:20px;
 }

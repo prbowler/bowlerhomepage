@@ -6,9 +6,12 @@
     <link rel="stylesheet" type="text/css" href="card.css">
 </head>
 <body>
+<header>
+   <?php  include "banner.html"; ?>
+</header>
 
 <?php
-    include "banner.html";
+
     include "connect-db.php";
 
     foreach ($db->query('SELECT * FROM item as i WHERE categoryid = 1') as $row) {

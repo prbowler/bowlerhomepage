@@ -13,9 +13,6 @@
 <header>
     <?php include 'banner.html'; ?>
 </header>
-<section id="main">
-    <h1 id="welcome">Welcome to PB Prepare</h1>
-</section>
 <footer>
     <?php include 'footer.php'; ?>
 </footer>
