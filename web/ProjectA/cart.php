@@ -25,6 +25,8 @@
                 <p class="total">$' . $total . '</p>
             </div>';
     }
-    echo '<br>Total = $' . $runningTotal;
+    echo
+        '<br>
+         <div class="cart_total">Total = $' . $runningTotal . '</div>';
 ?>
 </body>
