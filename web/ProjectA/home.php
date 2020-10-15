@@ -13,6 +13,7 @@
 <header>
     <?php include 'banner.html'; ?>
 </header>
+<div id="main-message">Are you prepared?</div>
 <footer>
     <?php include 'footer.php'; ?>
 </footer>
