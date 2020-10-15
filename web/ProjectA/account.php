@@ -9,7 +9,7 @@
 <?php
     include "banner.html";
     include "connect-db-ol.php";
-    $useerid = 1;
+    $useerid = 2;
 
     foreach ($db->query('SELECT * FROM shopper as s WHERE id = ' . $useerid .'') as $row) {
         echo
