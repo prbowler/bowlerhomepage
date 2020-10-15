@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Canning Supplies</title>
-    <link rel="stylesheet" type="text/css" href="card.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
 </head>
 <body>
 
