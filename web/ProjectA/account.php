@@ -9,8 +9,9 @@
 <?php
     include "banner.html";
     include "connect-db-ol.php";
+    $useerid = 1;
 
-    foreach ($db->query('SELECT * FROM shopper as s WHERE id = 1') as $row) {
+    foreach ($db->query('SELECT * FROM shopper as s WHERE id = ' . $useerid .'') as $row) {
         echo
             '
              <form>
