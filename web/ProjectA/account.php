@@ -12,13 +12,16 @@
 
     foreach ($db->query('SELECT * FROM shopper as s WHERE id = 1') as $row) {
         echo
-            '<div id="customer">
+            '
+             <form>
+             <div id="customer">
                 <input id="username" type="text" value="' . $row["username"] .'"><br>
                 <input id="firstname" type="text" value="' . $row['firstname'] .'">
                 <input id="lastname" type="text" value="' . $row['lastname'] . '"><br>
                 <input id="email" type="text" value="' . $row["email"] . '"><br>
                 <textarea id="address" value="' . $row["address"] . '"<br>
-            </div>';
+            </div>
+            </form>';
     }
 ?>
 </body>
