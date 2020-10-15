@@ -12,14 +12,15 @@
     include "connect-db-ol.php";
 
     foreach ($db->query('SELECT * FROM item as i JOIN cart as c on i.id = c.itemid') as $row) {
-        $image = 'img/' . $row['image'] . '.jpg';
+        //$image = 'img/' . $row['image'] . '.jpg';
         echo
         '<div class="card">
-                <img src="' . $image .'"alt="'. $image .'" style="width:100%">
+                
                 <h3>' . $row["name"] . '</h3>
                 <p class="price">$' . $row["price"] . '</p>
                 <p><button>Add to Cart</button></p>
             </div>';
     }
+    //<img src="' . $image .'"alt="'. $image .'" style="width:100%">
 ?>
 </body>
