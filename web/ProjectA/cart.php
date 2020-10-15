@@ -25,6 +25,6 @@
                 <p class="total">$' . $total . '</p>
             </div>';
     }
-    echo 'Total = $runningTotal';
+    echo '<br>Total = $' . $runningTotal;
 ?>
 </body>
