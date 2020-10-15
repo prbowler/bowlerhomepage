@@ -2,7 +2,7 @@
 
 try
 {
-    $dbUrl = getenv('https://dashboard.heroku.com/apps/mighty-mountain-73599');
+    $dbUrl = getenv('DATABASE_URL');
 
     $dbOpts = parse_url($dbUrl);
 
