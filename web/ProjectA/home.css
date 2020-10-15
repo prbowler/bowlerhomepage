@@ -2,3 +2,9 @@
 body {
     background-image: url("img/cows.jpg");
 }
+
+#main-message {
+    font-size:100px;
+    color:red;
+    float:right;
+}
