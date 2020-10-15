@@ -19,7 +19,7 @@
                 <h3>' . $row["name"] . '</h3>
                 <p class="price">$' . $row["price"] . '</p>
                 <p><button>Remove from Cart</button></p>
-                <input class="quantity">' . $row["quantity"] . '</input>
+                <input class="quantity" value="'.$row["quantity"].'">
             </div>';
     }
 ?>
