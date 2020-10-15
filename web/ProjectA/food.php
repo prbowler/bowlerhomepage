@@ -6,13 +6,10 @@
     <link rel="stylesheet" type="text/css" href="card.css">
 </head>
 <body>
-<header>
-   <?php  include "banner.html"; ?>
-</header>
 
 <?php
-
-    include "connect-db.php";
+    include "banner.html";
+    include "connect-db-hm.php";
 
     foreach ($db->query('SELECT * FROM item as i WHERE categoryid = 1') as $row) {
         $image = 'img/' . $row['image'] . '.jpg';

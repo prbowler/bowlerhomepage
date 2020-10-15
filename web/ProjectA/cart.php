@@ -9,7 +9,7 @@
 
 <?php
     include "banner.html";
-    include "connect-db.php";
+    include "connect-db-ol.php";
 
     foreach ($db->query('SELECT * FROM item as i JOIN cart as c on i.id = c.itemid') as $row) {
         $image = 'img/' . $row['image'] . '.jpg';

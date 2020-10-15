@@ -8,7 +8,7 @@
 <body>
 <?php
     include "banner.html";
-    include "connect-db.php";
+    include "connect-db-ol.php";
 
     foreach ($db->query('SELECT * FROM shopper as s WHERE id = 1') as $row) {
         echo
