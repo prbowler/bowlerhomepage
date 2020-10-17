@@ -9,6 +9,7 @@ $statement = $db->query('SELECT username, password FROM shopper');
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $valid = false;
 $shopper = 0;
+echo 'shoppera = ' . $shopper;
 //$_SESSION['user'] = $user;
 //include 'home.php';
 
