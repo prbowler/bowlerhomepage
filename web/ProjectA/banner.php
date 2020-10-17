@@ -1,7 +1,6 @@
 <?php
-if (session_status() !== PHP_SESSION_ACTIVE) {
-    session_start();
-}
+session_start();
+
 $user = 0;
 
 if (isset($_SESSION['user'])){

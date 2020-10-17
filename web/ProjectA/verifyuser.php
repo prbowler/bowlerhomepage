@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'connect-db-ol.php';
 $username_submitted = htmlspecialchars($_POST["username"]);
 $password_submitted = htmlspecialchars($_POST["password"]);
@@ -14,7 +15,7 @@ foreach ($results as $row) {
     }
 }
 
-if ($valid == true) {
+if ($valid === true) {
     $_SESSION['user'] = $user;
     include 'home.php';
 } else {
