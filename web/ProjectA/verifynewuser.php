@@ -30,9 +30,7 @@ if ($valid === true) {
     $stmt->bindValue(':email', $email, PDO::PARAM_STR);
     $stmt->bindValue(':address', $address, PDO::PARAM_STR);
     $stmt->execute();
-    $newId = $pdo->lastInsertId('shopper_id_seq');
-    $_SESSION['user'] = $newId;
-    include 'home.php';
+    include 'verifyuser.php';
 } else {
     echo '<script>alert("Username has been used.")</script>';
     include 'newuser.php';
