@@ -19,7 +19,7 @@ foreach ($results as $row) {
     }
 }
 $_SESSION['user'] = $user;
-echo $user;
+echo 'user= ' . $user;
 
 /*if ($valid === true) {
     $_SESSION['user'] = $user;
