@@ -3,7 +3,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
 $user = 0;
-$_SESSION['user'] = 1;
+
 if (isset($_SESSION['user'])){
     $user = $_SESSION['user'];
 }

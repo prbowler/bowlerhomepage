@@ -15,9 +15,6 @@ foreach ($results as $row) {
 }
 
 if ($valid == true) {
-    if (session_status() !== PHP_SESSION_ACTIVE) {
-        session_start();
-    }
     $_SESSION['user'] = $user;
     include 'home.php';
 } else {
