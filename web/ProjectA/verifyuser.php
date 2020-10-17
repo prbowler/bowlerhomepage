@@ -1,16 +1,6 @@
 <?php
 session_start();
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Banner</title>
-    <link rel="stylesheet" type="text/css" href="banner.css">
-</head>
-<body>
-<?php
 include 'connect-db-ol.php';
 $username_submitted = htmlspecialchars($_POST["username"]);
 $password_submitted = htmlspecialchars($_POST["password"]);
@@ -36,5 +26,3 @@ if ($valid === true) {
 }
 
 ?>
-</body>
-</html>
