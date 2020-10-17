@@ -7,7 +7,7 @@ $user = 0;
 if (isset($_SESSION['user'])){
     $user = $_SESSION['user'];
 }
-
+$_SESSION['user'] = 1;
 echo $user;
 echo $_SESSION['user'];
 
