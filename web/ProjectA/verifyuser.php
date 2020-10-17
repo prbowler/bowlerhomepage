@@ -8,18 +8,18 @@ $password_submitted = htmlspecialchars($_POST["password"]);
 $statement = $db->query('SELECT username, password FROM shopper');
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $valid = false;
-$user = 0;
+$shopper = 0;
 //$_SESSION['user'] = $user;
 //include 'home.php';
 
 foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
         $valid = true;
-        $user = $row['id'];
+        $shopper = $row['id'];
     }
 }
-$_SESSION['user'] = $user;
-echo 'user= ' . $user;
+$_SESSION['user'] = $shopper;
+echo 'shopper= ' . $shopper;
 
 /*if ($valid === true) {
     $_SESSION['user'] = $user;
