@@ -3,12 +3,12 @@ include 'connect-db-ol.php';
 $username_submitted = htmlspecialchars($_POST["username"]);
 $password_submitted = htmlspecialchars($_POST["password"]);
 
-$shopper = 'SELECT * from shopper WHERE userid =' . $username_submitted.'';
+$statement = $db->query('SELECT username, password FROM shopper');
+$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+print_r($results);
 
-print_r($shopper);
-
-if ($shopper['password'] == $password_submitted) {
-    $user = $shopper['id'];
+if ($results['password'] == $password_submitted) {
+    $user = $results['id'];
 }  else {
     echo 'Password is incorrect.';
     include 'login.php';
