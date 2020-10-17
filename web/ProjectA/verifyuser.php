@@ -10,6 +10,7 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $valid = false;
 $user = 1;
 $_SESSION['user'] = $user;
+include 'home.php';
 
 /*foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
