@@ -9,9 +9,6 @@ $statement = $db->query('SELECT username, password, id FROM shopper');
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $valid = false;
 $shopper = 0;
-echo 'shoppera = ' . $shopper;
-//$_SESSION['user'] = $user;
-//include 'home.php';
 
 foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
@@ -19,15 +16,12 @@ foreach ($results as $row) {
         $shopper = $row['id'];
     }
 }
-$_SESSION['user'] = $shopper;
-echo 'shopper= ' . $shopper;
-
-/*if ($valid === true) {
+if ($valid === true) {
     $_SESSION['user'] = $user;
     include 'home.php';
 } else {
     echo '<script>alert("Password is incorrect")</script>';
     include 'login.php';
-}*/
+}
 
 ?>
