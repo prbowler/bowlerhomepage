@@ -11,7 +11,7 @@ foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
         $valid = true;
         $user = $row['id'];
-        echo $user;
+        echo '<script>alert("User has been found ")</script>' . $user;
     }
 }
 
@@ -20,6 +20,7 @@ if ($valid == true) {
         session_start();
     }
     $_SESSION['user'] = $user;
+    echo '<script>alert("User has been changed to ")</script>' . $user;
     include 'home.php';
 } else {
     include 'login.php';
