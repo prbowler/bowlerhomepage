@@ -10,7 +10,7 @@ $valid = false;
 foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
         $valid = true;
-        $user = $row['username'];
+        $user = $row['id'];
     }
 }
 
@@ -19,6 +19,7 @@ if ($valid == true) {
         session_start();
     }
     $_SESSION['user'] = $user;
+    include 'home.php';
 } else {
     include 'login.php';
 }
