@@ -13,15 +13,9 @@ session_start();
 <?php
 $user = 0;
 
-if (isset($_SESSION['user'])){
+if (isset($_SESSION['user'])) {
     $user = $_SESSION['user'];
-    echo 'user set';
-} else {
-    echo 'user not set';
 }
-
-echo $user;
-echo $_SESSION['user'];
 
 if ($user === 0) {
     $accountLink = '<li><a href="login.php">Login</a></li>';
