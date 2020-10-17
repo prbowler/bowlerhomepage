@@ -9,10 +9,18 @@ $valid = false;
 
 foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
-        echo $row['username'];
         $valid = true;
         $user = $row['username'];
     }
+}
+
+if ($valid == true) {
+    if (session_status() !== PHP_SESSION_ACTIVE) {
+        session_start();
+    }
+    $_SESSION['user'] = $user;
+} else {
+    include 'login.php';
 }
 
 ?>
