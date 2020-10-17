@@ -1,11 +1,15 @@
 <?php
-if (session_status() === PHP_SESSION_ACTIVE && (isset($_SESSION['user']))) {
-    $user = $_SESSION['user'];
-} else {
+if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
-    $user = 0;
 }
+$user = 0;
+
+if (isset($_SESSION['user'])){
+    $user = $_SESSION['user'];
+}
+
 echo $user;
+
 if ($user === 0) {
     $accountLink = '<li><a href="login.php">Login</a></li>';
 } else {
