@@ -9,6 +9,7 @@ if (isset($_SESSION['user'])){
 }
 
 echo $user;
+echo $_SESSION['user'];
 
 if ($user === 0) {
     $accountLink = '<li><a href="login.php">Login</a></li>';
