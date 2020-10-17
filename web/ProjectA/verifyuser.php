@@ -8,12 +8,12 @@ $password_submitted = htmlspecialchars($_POST["password"]);
 $statement = $db->query('SELECT username, password, id FROM shopper');
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $valid = false;
-$shopper = 0;
+$user = 0;
 
 foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
         $valid = true;
-        $shopper = $row['id'];
+        $user = $row['id'];
     }
 }
 if ($valid === true) {
