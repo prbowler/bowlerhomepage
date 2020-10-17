@@ -11,6 +11,8 @@
      <div id="customer">
         <label for="username">Username</label>
         <input id="username" name="username" type="text"><br>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password"><br>
         <label for="firstname">First Name</label>
         <input id="firstname" name="firstname" type="text">
         <label for="lastname">Last Name</label>
