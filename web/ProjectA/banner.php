@@ -1,6 +1,16 @@
 <?php
 session_start();
+?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banner</title>
+    <link rel="stylesheet" type="text/css" href="banner.css">
+</head>
+<body>
+<?php
 $user = 0;
 
 if (isset($_SESSION['user'])){
@@ -18,17 +28,7 @@ if ($user === 0) {
 } else {
     $accountLink = '<li><a href="account.php">My Account</a></li>';
 }
-
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Banner</title>
-    <link rel="stylesheet" type="text/css" href="banner.css">
-</head>
-<body>
 <div id="banner">
     <div id="logo">
         <a href="home.php">
