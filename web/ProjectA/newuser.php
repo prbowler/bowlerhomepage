@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="newuser.css">
 </head>
 <body>
-     <form>
+     <form action="verifynewuser.php">
      <h2>Account information</h2>
      <div id="customer">
         <label for="username">Username</label>
