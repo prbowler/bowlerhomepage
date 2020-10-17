@@ -10,13 +10,14 @@
     include "banner.php";
     include "connect-db-ol.php";
     echo
-    '<form action="verifyuser.php">
-     <label for="username">Username</label><br>
-     <input type="text" name="username"><br>
-     <label for="password">Password</label><br>
-     <input type="password" name="password"><br>
-     <input type="submit"><br>
-     <a href="newuser.php">New User</a>';
+    '<form action="verifyuser.php" method="post">
+         <label for="username">Username</label><br>
+         <input type="text" name="username"><br>
+         <label for="password">Password</label><br>
+         <input type="password" name="password"><br>
+         <input type="submit"><br>
+         <a href="newuser.php">New User</a><br>
+     </form>';
 ?>
 </body>
 </html>
