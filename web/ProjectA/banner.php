@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_ACTIVE) {
 }
 
 if ($user == 0) {
-    $accountLink = '<li><a href="login">Login</a></li>';
+    $accountLink = '<li><a href="login.php">Login</a></li>';
 } else {
     $accountLink = '<li><a href="account.php">My Account</a></li>';
 }
