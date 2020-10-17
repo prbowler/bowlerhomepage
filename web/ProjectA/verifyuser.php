@@ -3,7 +3,7 @@ include 'connect-db-ol.php';
 $username_submitted = htmlspecialchars($_POST["username"]);
 $password_submitted = htmlspecialchars($_POST["password"]);
 
-$shopper = "SELECT * from shopper WHERE userid == $username_submitted";
+$shopper = 'SELECT * from shopper WHERE userid =' . $username_submitted.'';
 
 print_r($shopper);
 
