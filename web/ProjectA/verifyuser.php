@@ -1,5 +1,16 @@
 <?php
 session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banner</title>
+    <link rel="stylesheet" type="text/css" href="banner.css">
+</head>
+<body>
+<?php
 include 'connect-db-ol.php';
 $username_submitted = htmlspecialchars($_POST["username"]);
 $password_submitted = htmlspecialchars($_POST["password"]);
@@ -7,6 +18,7 @@ $password_submitted = htmlspecialchars($_POST["password"]);
 $statement = $db->query('SELECT username, password FROM shopper');
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $valid = false;
+$user = 0;
 
 foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
@@ -24,3 +36,5 @@ if ($valid === true) {
 }
 
 ?>
+</body>
+</html>
