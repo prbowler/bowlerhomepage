@@ -11,6 +11,7 @@ foreach ($results as $row) {
     if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
         $valid = true;
         $user = $row['id'];
+        echo $user;
     }
 }
 
