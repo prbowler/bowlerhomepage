@@ -1,12 +1,12 @@
 <?php
-if (session_status() === PHP_SESSION_ACTIVE) {
+if (session_status() === PHP_SESSION_ACTIVE && (isset($_SESSION['user']))) {
     $user = $_SESSION['user'];
 } else {
     session_start();
     $user = 0;
 }
-
-if ($user == 0) {
+echo $user;
+if ($user === 0) {
     $accountLink = '<li><a href="login.php">Login</a></li>';
 } else {
     $accountLink = '<li><a href="account.php">My Account</a></li>';
