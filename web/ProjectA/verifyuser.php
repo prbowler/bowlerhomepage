@@ -24,6 +24,7 @@ if ($valid == true) {
     echo '<script>alert("User has been changed to")</script>';
     include 'home.php';
 } else {
+    echo '<script>alert("Password is incorrect")</script>';
     include 'login.php';
 }
 
