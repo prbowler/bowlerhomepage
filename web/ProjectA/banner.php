@@ -1,3 +1,19 @@
+<?php
+if (session_status() === PHP_SESSION_ACTIVE) {
+    $user = $_SESSION['user'];
+} else {
+    session_start();
+    $user = 0;
+}
+
+if ($user == 0) {
+    $accountLink = '<li><a href="login">Login</a></li>';
+} else {
+    $accountLink = '<li><a href="account.php">My Account</a></li>';
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +34,7 @@
         <h1 id="store-name">PB Survival Supplies</h1>
         <ul id="main-menu">
             <li><a href="home.php">Home</a></li>
-            <li><a href="account.php">My Account</a></li>
+            <?php echo $accountLink; ?>
             <li><a href="cart.php">Cart</a></li>
         </ul>
     </div>

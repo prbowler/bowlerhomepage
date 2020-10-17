@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-    <?php include 'banner.html'; ?>
+    <?php include 'banner.php'; ?>
 </header>
 <div id="main-message">Are you prepared?</div>
 <footer>

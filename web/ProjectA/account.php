@@ -1,3 +1,7 @@
+<?php
+$userid = $_SESSION[$user];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +11,11 @@
 </head>
 <body>
 <?php
-    include "banner.html";
+    include "banner.php";
     include "connect-db-ol.php";
-    $useerid = 2;
+    $userid = 2;
 
-    foreach ($db->query('SELECT * FROM shopper as s WHERE id = ' . $useerid .'') as $row) {
+    foreach ($db->query('SELECT * FROM shopper as s WHERE id = ' . $userid .'') as $row) {
         echo
             '
              <form>

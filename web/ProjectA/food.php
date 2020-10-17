@@ -8,7 +8,7 @@
 <body>
 
 <?php
-    include "banner.html";
+    include "banner.php";
     include "connect-db-ol.php";
 
     foreach ($db->query('SELECT * FROM items as i WHERE categoryid = 1') as $row) {
