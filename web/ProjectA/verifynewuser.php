@@ -32,6 +32,7 @@ if ($valid === true) {
     $stmt->execute();
     //include 'verifyuser.php';*/
     echo '<script>alert("This function is not working yet. Try username=bbowler password=bbowler")</script>';
+    include 'login.php';
 } else {
     echo '<script>alert("Username has been used.")</script>';
     include 'newuser.php';
