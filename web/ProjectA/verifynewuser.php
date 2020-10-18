@@ -2,8 +2,8 @@
 session_start();
 
 include 'connect-db-ol.php';
-$username_submitted = htmlspecialchars($_POST["username"]);
-$password_submitted = htmlspecialchars($_POST["password"]);
+$username = htmlspecialchars($_POST["username"]);
+$password = htmlspecialchars($_POST["password"]);
 $firstname = htmlspecialchars($_POST["firstname"]);
 $lastname = htmlspecialchars($_POST["lastname"]);
 $email = htmlspecialchars($_POST["email"]);
@@ -16,7 +16,7 @@ $valid = true;
 $user = 0;
 
 foreach ($results as $row) {
-    if ($row['username'] == $username_submitted) {
+    if ($row['username'] == $username) {
         $valid = false;
     }
 }
