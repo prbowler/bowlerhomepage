@@ -30,7 +30,7 @@ if ($valid === true) {
     $stmt->bindValue(':email', $email, PDO::PARAM_STR);
     $stmt->bindValue(':address', $address, PDO::PARAM_STR);
     $stmt->execute();
-    include 'verifyuser.php';
+    //include 'verifyuser.php';
 } else {
     echo '<script>alert("Username has been used.")</script>';
     include 'newuser.php';
