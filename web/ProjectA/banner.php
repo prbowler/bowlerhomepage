@@ -18,7 +18,7 @@ if (isset($_SESSION['user'])) {
 }
 
 if ($user === 0) {
-    $accountLink = '<li><a href="login.php">Login</a></li>';
+    $accountLink = '<li><a href="login.php">Login</a></li><li><a href="newuser.php">New User</a> </li>';
 } else {
     $accountLink = '<li><a href="account.php">My Account</a></li><li><a href="logout.php">Logout</a> </li>';
 }
