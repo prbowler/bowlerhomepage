@@ -21,8 +21,8 @@ foreach ($results as $row) {
     }
 }
 if ($valid === true) {
-    /*$stmt = $db->prepare('INSERT INTO shopper(username, password, firstname, email, address) VALUES
-                        (:username_submitted, :password_submitted, :firstname, :lastname, :email, :address);');
+    $db = get_db();
+    $stmt = $db->prepare('INSERT INTO shopper(username, password, firstname, email, address) VALUES (:username_submitted, :password_submitted, :firstname, :lastname, :email, :address);');
     $stmt->bindValue(':username_submitted', $username_submitted, PDO::PARAM_STR);
     $stmt->bindValue(':password_submitted', $password_submitted, PDO::PARAM_STR);
     $stmt->bindValue(':firstname', $firstname, PDO::PARAM_STR);
@@ -30,7 +30,7 @@ if ($valid === true) {
     $stmt->bindValue(':email', $email, PDO::PARAM_STR);
     $stmt->bindValue(':address', $address, PDO::PARAM_STR);
     $stmt->execute();
-    //include 'verifyuser.php';*/
+    //include 'verifyuser.php';
     echo 'end';
 } else {
     echo '<script>alert("Username has been used.")</script>';
