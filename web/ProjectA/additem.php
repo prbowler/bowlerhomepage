@@ -8,7 +8,6 @@
     $stmt->execute();
     $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
     var_dump($item);
-    /*
     $image = 'img/' . $item['image'] . '.jpg';
     echo
         '<div class="card">
@@ -17,5 +16,4 @@
                 <p class="price">$' . $item["price"] . '</p>
                 <p><a href="additem.php">Add to Cart</a></p>
             </div>';
-    */
 
