@@ -10,7 +10,7 @@
 <?php
 
     require "connect-db-ol.php";
-    include "banner.php"
+    include "banner.php";
     $id = htmlspecialchars($_GET['item_id']);
     echo "id = $id";
     $query = 'SELECT * FROM items WHERE id = ' . $id .'';
