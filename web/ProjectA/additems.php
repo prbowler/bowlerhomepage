@@ -1,6 +1,11 @@
 <?php
+session_start();
+$user = 0;
+if (isset($_SESSION['user'])) {
+    $user = $_SESSION['user'];
+}
 require "connect-db-ol.php";
-require "banner.php";
+
 $id = htmlspecialchars($_POST['item_id']);
 $quantity = htmlspecialchars($_POST['quantity']);
 $shopperid = $user;
