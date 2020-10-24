@@ -8,7 +8,7 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $item = $items[0];
-var_dump($items);
+var_dump($item);
 echo "adding items";
 echo $itemId;
 echo $quantity;
