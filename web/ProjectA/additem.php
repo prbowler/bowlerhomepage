@@ -9,8 +9,8 @@
     $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
     var_dump($item);
     $image = 'img/' . $item['image'] . '.jpg';
-    $name = $item["name"];
-    $price = $item["price"];
+    $name = array($item["name"]);
+    $price = array($item["price"]);
     var_dump($name);
     var_dump($price);
     //echo "Name = $name price = \$$price";
