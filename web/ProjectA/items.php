@@ -7,7 +7,7 @@ function getItemsByCat($catagoryId)
 
     foreach ($db->query('SELECT * FROM items as i WHERE categoryid = ' . $catagoryId . '') as $row) {
         $image = 'img/' . $row['image'] . '.jpg';
-        $id = $row['i.id'];
+        $id = $row['id'];
         echo
             '<div class="card">
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
