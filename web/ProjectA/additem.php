@@ -6,8 +6,9 @@
     $query = 'SELECT * FROM items WHERE id = ' . $id .'';
     $stmt = $db->prepare($query);
     $stmt->execute();
-    $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($item);
+    $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    var_dump($items);
+    $item = $items[0];
     $image = 'img/' . $item['image'] . '.jpg';
     echo $item['name'];
     echo $item['price'];
@@ -19,4 +20,5 @@
                 <p class="price">$' . $price . '</p>
             </div>';
     */
+
 
