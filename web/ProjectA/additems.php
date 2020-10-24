@@ -1,6 +1,6 @@
 <?php
 require "connect-db-ol.php";
-$itemId = htmlspecialchars($_POST['item_id']);
+$id = htmlspecialchars($_POST['item_id']);
 $quantity = htmlspecialchars($_POST['quantity']);
 
 $query = 'SELECT * FROM items WHERE id = ' . $id .'';
@@ -10,6 +10,6 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $item = $items[0];
 var_dump($item);
 echo "adding items";
-echo $itemId;
+echo $id;
 echo $quantity;
 
