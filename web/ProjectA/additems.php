@@ -1,5 +1,5 @@
 <?php
-
+require "connect-db-ol.php";
 $itemId = htmlspecialchars($_POST['item_id']);
 $quantity = htmlspecialchars($_POST['quantity']);
 
