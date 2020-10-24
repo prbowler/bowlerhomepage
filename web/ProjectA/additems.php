@@ -16,3 +16,6 @@ $stmt->bindValue(':quantity', $quantity, PDO::PARAM_STR);
 $stmt->bindValue(':shopperid', $shopperid, PDO::PARAM_STR);
 $stmt->execute();
 
+include "cart.php";
+die();
+
