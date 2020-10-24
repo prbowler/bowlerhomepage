@@ -14,7 +14,7 @@
     $price = $item['price'];
      echo
         '<div class="card">
-                <img src="' . $image .'"alt="'. $image .'" style="width:100%">
+                <img src="' . $image .'"alt="'. $image .'" style="width:20%">
                 <h3>' . $name . '</h3>
                 <p class="price">$' . $price . '</p>
             </div>';
