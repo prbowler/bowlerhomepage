@@ -7,7 +7,7 @@
     $stmt = $db->prepare($query);
     $stmt->execute();
     $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    //var_dump($item);
+    var_dump($item);
     $image = 'img/' . $item['image'] . '.jpg';
     $name = $item["name"];
     $price = $item["price"];
