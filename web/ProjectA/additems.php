@@ -12,6 +12,8 @@ $stmt->bindValue(':quantity', $quantity, PDO::PARAM_STR);
 $stmt->bindValue(':shopperid', $shopperid, PDO::PARAM_STR);
 $stmt->execute();
 
-include "cart.php";
+$new_page = "cart.php";
+
+header("Location: $new_page");
 die();
 
