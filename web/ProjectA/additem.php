@@ -10,15 +10,13 @@
     var_dump($items);
     $item = $items[0];
     $image = 'img/' . $item['image'] . '.jpg';
-    echo $item['name'];
-    echo $item['price'];
-    /*
+    $name = $item['name'];
+    $price = $item['price'];
      echo
         '<div class="card">
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
                 <h3>' . $name . '</h3>
                 <p class="price">$' . $price . '</p>
             </div>';
-    */
 
 
