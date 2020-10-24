@@ -8,7 +8,7 @@ if (isset($_SESSION['user'])) {
 }
 require "connect-db-ol.php";
 
-$id = htmlspecialchars($_POST['item_id']);
+$id = htmlspecialchars($_GET['item_id']);
 $shopperid = $user;
 echo "id = $id";
 echo "shopperid = $shopperid";
