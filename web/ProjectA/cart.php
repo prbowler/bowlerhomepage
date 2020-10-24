@@ -15,6 +15,7 @@
         $image = 'img/' . $row['image'] . '.jpg';
         $total = $row['price'] * $row['quantity'];
         $itemId = $row['itemid'];
+        echo "idemId = $itemId";
         $runningTotal += $total;
         echo
         '<div class="card">
