@@ -9,7 +9,7 @@
 
 <?php
     include "banner.php";
-    include "items.php";
+    require "items.php";
     getItemsByCat(4);
     include "connect-db-ol.php";
 ?>
