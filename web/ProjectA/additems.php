@@ -1,8 +1,9 @@
 <?php
 require "connect-db-ol.php";
+require "banner.php";
 $id = htmlspecialchars($_POST['item_id']);
 $quantity = htmlspecialchars($_POST['quantity']);
-$shopperid = 1;
+$shopperid = $user;
 
 $query = 'INSERT INTO cart(itemid, quantity, shopperid) VALUES (:item_id, :quantity, :shopperid)';
 $stmt = $db->prepare($query);
