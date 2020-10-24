@@ -11,7 +11,9 @@
     $image = 'img/' . $item['image'] . '.jpg';
     $name = $item["name"];
     $price = $item["price"];
-    echo "Name = $name price = \$$price";
+    var_dump($name);
+    var_dump($price);
+    //echo "Name = $name price = \$$price";
     /*
      echo
         '<div class="card">
