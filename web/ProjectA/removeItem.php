@@ -11,15 +11,15 @@ require "connect-db-ol.php";
 $id = htmlspecialchars($_POST['item_id']);
 $shopperid = $user;
 
-$query = 'DELETE FROM cart WHERE itemid = ' . $id . ' AND shopperid = ' . $shopperid . '';
-$stmt = $db->prepare($query);
+//$query = 'DELETE FROM cart WHERE itemid = ' . $id . ' AND shopperid = ' . $shopperid . '';
+$stmt = $db->prepare('DELETE FROM cart WHERE itemid = ? AND shopperid = ?');
 //$stmt = $db->prepare('INSERT INTO cart(itemid, quantity, shopperid) VALUES (:item_id, :quantity, :shopperid);');
 //$stmt->bindValue(':item_id', $id, PDO::PARAM_INT);
 //$stmt->bindValue(':quantity', $quantity, PDO::PARAM_STR);
 //$stmt->bindValue(':shopperid', $shopperid, PDO::PARAM_STR);
-$stmt->execute();
+$stmt->execute($id, $shopperid);
 
-$new_page = "cart.php";
+$new_page = "home.php";
 
 header("Location: $new_page");
 die();
