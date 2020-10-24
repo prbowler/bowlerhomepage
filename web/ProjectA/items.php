@@ -13,7 +13,7 @@ function getItemsByCat($catagoryId)
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
                 <h3>' . $row["name"] . '</h3>
                 <p class="price">$' . $row["price"] . '</p>
-                <p><a href="additem.php?item_id=$id">Add to Cart</a></p>
+                <p><a href="additem.php?item_id='.$id.'">Add to Cart</a></p>
             </div>';
     }
 }
