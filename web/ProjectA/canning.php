@@ -18,7 +18,7 @@
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
                 <h3>' . $row["name"] . '</h3>
                 <p class="price">$' . $row["price"] . '</p>
-                <p><button>Add to Cart</button></p>
+                <p><a href="additem.php">Add to Cart</a></p>
             </div>';
     }
 ?>
