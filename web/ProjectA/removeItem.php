@@ -10,7 +10,9 @@ require "connect-db-ol.php";
 
 $id = htmlspecialchars($_POST['item_id']);
 $shopperid = $user;
-
+echo "id = $id";
+echo "shopperid = $shopperid";
+/*
 //$query = 'DELETE FROM cart WHERE itemid = ' . $id . ' AND shopperid = ' . $shopperid . '';
 $stmt = $db->prepare('DELETE FROM cart WHERE itemid = ? AND shopperid = ?');
 //$stmt = $db->prepare('INSERT INTO cart(itemid, quantity, shopperid) VALUES (:item_id, :quantity, :shopperid);');
@@ -23,5 +25,5 @@ $new_page = "home.php";
 
 header("Location: $new_page");
 die();
-
+*/
 
