@@ -9,11 +9,12 @@
     $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
     var_dump($item);
     $image = 'img/' . $item['image'] . '.jpg';
+    $name = $item["name"];
+    $price = $item["price"];
     echo
         '<div class="card">
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
-                <h3>' . $item["name"] . '</h3>
-                <p class="price">$' . $item["price"] . '</p>
-                <p><a href="additem.php">Add to Cart</a></p>
+                <h3>' . $name . '</h3>
+                <p class="price">$' . $price . '</p>
             </div>';
 
