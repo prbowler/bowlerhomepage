@@ -14,13 +14,14 @@
     foreach ($db->query('SELECT * FROM items as i JOIN cart as c on i.id = c.itemid WHERE c.shopperid = ' . $user . '') as $row) {
         $image = 'img/' . $row['image'] . '.jpg';
         $total = $row['price'] * $row['quantity'];
+        $itemId = $row['itemid'];
         $runningTotal += $total;
         echo
         '<div class="card">
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
                 <h3>' . $row["name"] . '</h3>
                 <p class="price">$' . $row["price"] . '</p>
-                <p><button>Remove from Cart</button></p>
+                <p><a href="removeItem.php?item_id='.$itemId.'"> Remove from Cart</a></p>
                 <input class="quantity" value="'.$row["quantity"].'">
                 <p class="total">Total = $' . $total . '</p>
             </div>';
