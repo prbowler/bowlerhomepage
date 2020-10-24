@@ -25,7 +25,7 @@
                 <form action="updateItems" method="post">
                     <input class="quantity" name="quantity" value="'.$row["quantity"].'">
                     <input type="hidden" name="item_id" value="'.$itemId.'">
-                    <input type="submit" value="Update Cart">
+                    <input type="submit" value="Update">
                 </form>
                 <p class="total">Total = $' . $total . '</p>
             </div>';
