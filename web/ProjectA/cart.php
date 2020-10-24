@@ -22,7 +22,7 @@
                 <h3>' . $row["name"] . '</h3>
                 <p class="price">$' . $row["price"] . '</p>
                 <p><a href="removeItem.php?item_id='.$itemId.'">Remove from Cart</a></p>
-                <form action="updateItems" method="post">
+                <form action="updateItems.php" method="post">
                     <input class="quantity" name="quantity" value="'.$row["quantity"].'">
                     <input type="hidden" name="item_id" value="'.$itemId.'">
                     <input type="submit" value="Update">
