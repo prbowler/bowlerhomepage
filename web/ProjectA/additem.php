@@ -7,14 +7,17 @@
     $stmt = $db->prepare($query);
     $stmt->execute();
     $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($item);
+    //var_dump($item);
     $image = 'img/' . $item['image'] . '.jpg';
     $name = $item["name"];
     $price = $item["price"];
-    echo
+    echo "Name = $name price = \$$price";
+    /*
+     echo
         '<div class="card">
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
                 <h3>' . $name . '</h3>
                 <p class="price">$' . $price . '</p>
             </div>';
+    */
 
