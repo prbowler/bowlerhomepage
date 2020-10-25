@@ -12,7 +12,6 @@
     require "connect-db-ol.php";
     include "banner.php";
     $id = htmlspecialchars($_GET['item_id']);
-    echo "id = $id";
     $query = 'SELECT * FROM items WHERE id = ' . $id .'';
     $stmt = $db->prepare($query);
     $stmt->execute();
