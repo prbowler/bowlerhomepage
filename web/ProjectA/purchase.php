@@ -9,4 +9,4 @@ echo "Purchase complete<br>";
 echo "Shopper ID= $shopperid";
 echo "Card Number = $cardNumber";
 
-echo "<a href='home.php'>Return Home</a>";
+echo "<br><a href='home.php'>Return Home</a>";
