@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Checkout</title>
-    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link rel="stylesheet" type="text/css" href="checkout.css">
 </head>
 <body>
 
@@ -26,7 +26,8 @@ foreach ($db->query('SELECT * FROM items as i JOIN cart as c on i.id = c.itemid 
             </tr>';
 }
 echo
-    '<tr><td></td><td></td><td></td>
-     <td>$' . $runningTotal . '</td></table>';
+    '<tr>Grand Total<td></td><td></td><td></td>
+     <td>$' . $runningTotal . '</td></table>
+     <a href="purchase.php">Purchase</a>';
 ?>
 </body>
