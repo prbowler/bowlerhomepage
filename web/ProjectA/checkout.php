@@ -26,7 +26,7 @@ foreach ($db->query('SELECT * FROM items as i JOIN cart as c on i.id = c.itemid 
             </tr>';
 }
 echo
-    '<tr>Grand Total<td></td><td></td><td></td>
+    '<tr><td>Grand Total</td><td></td><td></td>
      <td>$' . $runningTotal . '</td></table>
      <a href="purchase.php">Purchase</a>';
 ?>
