@@ -27,7 +27,13 @@ foreach ($db->query('SELECT * FROM items as i JOIN cart as c on i.id = c.itemid 
 }
 echo
     '<tr><td>Grand Total</td><td></td><td></td>
-     <td>$' . $runningTotal . '</td></table>
-     <a href="purchase.php">Purchase</a>';
+     <td>$' . $runningTotal . '</td></table><br>';
+echo '
+     <form action="purchase.php" method="post">
+        <input type="hidden" name="shopper_id">
+        <label for="card_number">Card Number</label>
+        <input type="number" name="card_number">
+        <input type="submit" value="Purchase">   
+     </form>';
 ?>
 </body>
