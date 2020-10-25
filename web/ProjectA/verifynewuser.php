@@ -32,7 +32,7 @@ if ($valid === true) {
     $stmt->execute();
 }
 
-$new_page = "cart.php";
+$new_page = "home.php";
 
 header("Location: $new_page");
 die();

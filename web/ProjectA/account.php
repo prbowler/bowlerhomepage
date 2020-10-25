@@ -1,5 +1,6 @@
 <?php
-$userid = $_SESSION[$user];
+session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -13,9 +14,14 @@ $userid = $_SESSION[$user];
 <?php
     include "banner.php";
     include "connect-db-ol.php";
-    $userid = 2;
+    $user = 0;
+    if (isset($_SESSION['user'])) {
+        $user = $_SESSION['user'];
+    } else {
+        die();
+    }
 
-    foreach ($db->query('SELECT * FROM shopper as s WHERE id = ' . $userid .'') as $row) {
+    foreach ($db->query('SELECT * FROM shopper as s WHERE id = ' . $user .'') as $row) {
         echo
             '
              <form>
