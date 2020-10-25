@@ -1,7 +1,27 @@
 <?php
+session_start();
+$user = 0;
 
-$itemId = $_POST['item_id'];
-$quantity = $_POST['quantity'];
+if (isset($_SESSION['user'])) {
+    $user = $_SESSION['user'];
+} else {
+    die();
+}
+require "connect-db-ol.php";
 
-echo "Updating $itemId to $quantity";
+$id = htmlspecialchars($_POST['item_id']);
+$quantity = htmlspecialchars($_POST['quantity']);
+$shopperid = $user;
 
+$query = 'UPDATE cart SET quantity = :quantity WHERE itemid = :item_id AND shopperid = :shopperid';
+$stmt = $db->prepare($query);
+//$stmt = $db->prepare('INSERT INTO cart(itemid, quantity, shopperid) VALUES (:item_id, :quantity, :shopperid);');
+$stmt->bindValue(':item_id', $id, PDO::PARAM_INT);
+$stmt->bindValue(':quantity', $quantity, PDO::PARAM_STR);
+$stmt->bindValue(':shopperid', $shopperid, PDO::PARAM_STR);
+$stmt->execute();
+
+$new_page = "cart.php";
+
+header("Location: $new_page");
+die();
