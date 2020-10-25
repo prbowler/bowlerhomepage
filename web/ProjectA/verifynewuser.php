@@ -13,9 +13,9 @@ $statement = $db->query('SELECT username, password, id FROM shopper');
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $valid = true;
 $user = 0;
-var_dump($results);
+//var_dump($results);
 
-/*foreach ($results as $row) {
+foreach ($results as $row) {
     if ($row['username'] == $username) {
         $valid = false;
     }
@@ -36,7 +36,7 @@ $new_page = "cart.php";
 
 header("Location: $new_page");
 die();
-*/
+
 /*$statement = $db->query('SELECT username, password, id FROM shopper');
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $valid = true;
