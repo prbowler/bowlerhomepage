@@ -36,7 +36,7 @@
             <li><a>Week12</a></li>
             <li><a>Week13</a></li>
             <li><a>Week14</a></li>
-            <li>Project A</li>
+            <li><a href="./ProjectA/home.php">Project A</a></li>
             <li>Project B</li>
         </ul>
     </div>
