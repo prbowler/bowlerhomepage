@@ -6,7 +6,7 @@ require "password.php";
 
 $username = htmlspecialchars($_POST["username"]);
 $pw = htmlspecialchars($_POST["password"]);
-$password = password_hash($pw, PASSWORD_DEFAULT);
+$password = password_hash('bbowler', PASSWORD_DEFAULT);
 $valid = true;
 
 /*$statement = $db->query('SELECT username, password, id FROM shopper');

@@ -15,7 +15,6 @@
          <label for="password">Password</label><br>
          <input type="password" name="password"><br>
          <input type="submit"><br>
-         <a href="newuser.php">New User</a><br>
      </form>';
 ?>
 </body>
