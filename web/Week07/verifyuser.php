@@ -18,8 +18,7 @@ foreach ($results as $row) {
 }
 if ($valid === true) {
     $_SESSION['user'] = $user;
-    $new_page = "welcome.php";
-    header("Location: $new_page");
+    include "welcome.php";
     //echo '<script>alert("Password is correct")</script>';
 } else {
     echo '<script>alert("Password is incorrect")</script>';
