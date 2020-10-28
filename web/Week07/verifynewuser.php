@@ -5,7 +5,8 @@ require "connect-db-ol.php";
 require "password.php";
 
 $username = htmlspecialchars($_POST["username"]);
-$password = password_hash(htmlspecialchars($_POST["password"]));
+$pw = htmlspecialchars($_POST["password"]);
+$password = password_hash($pw, PASSWORD_DEFAULT);
 $valid = true;
 
 /*$statement = $db->query('SELECT username, password, id FROM shopper');
