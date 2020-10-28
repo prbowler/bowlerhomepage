@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 
 include 'connect-db-ol.php';
 $username_submitted = htmlspecialchars($_POST["username"]);
@@ -13,13 +13,14 @@ $user = 0;
 foreach ($results as $row) {
     if ($row['username'] == $username_submitted && password_verify($password_submitted, $row['password'])) {
         $valid = true;
-        //$user = $row['id'];
+        $user = $row['id'];
     }
 }
 if ($valid === true) {
-    //$_SESSION['user'] = $user;
-    //include 'home.php';
-    echo '<script>alert("Password is correct")</script>';
+    $_SESSION['user'] = $user;
+    $new_page = "welcome.php";
+    header("Location: $new_page");
+    //echo '<script>alert("Password is correct")</script>';
 } else {
     echo '<script>alert("Password is incorrect")</script>';
     include 'login.php';
