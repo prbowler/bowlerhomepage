@@ -10,8 +10,9 @@ if (isset($_SESSION['user'])) {
 if ($user === 0) {
     include "login.php";
 } else {
-    $username = $db->query('SELECT username, id FROM user_password WHERE id = '.$user.'');
-    var_dump($username);
+    $statement = $db->query('SELECT username, password, id FROM user_password WHERE id ='.$user.'');
+    $results = $statement->fetchAll(PDO::FETCH_ASSOC);
+    var_dump($results);
 }
 
 
