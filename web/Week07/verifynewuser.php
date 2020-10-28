@@ -27,7 +27,9 @@ if ($valid === true) {
     $stmt->bindValue(':password', $password, PDO::PARAM_STR);
     $stmt->execute();
     echo '<script>alert("User Added")';
-} else { echo '<script>alert("Username is already used")';}
+} else {
+    echo '<script>alert("Username is already used")';
+}
 
 $new_page = "login.php";
 
