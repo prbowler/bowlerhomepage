@@ -19,13 +19,13 @@ $user = 0;*/
         $valid = false;
     }
 }*/
-if ($valid === true) {
+/*if ($valid === true) {
     $query = 'INSERT INTO user_password(username, password) VALUES (:username, :password)';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':username', $username, PDO::PARAM_STR);
     $stmt->bindValue(':password', $password, PDO::PARAM_STR);
     $stmt->execute();
-}
+}*/
 
 echo "End";
 /*$new_page = "login.php";
