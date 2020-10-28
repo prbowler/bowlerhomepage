@@ -28,7 +28,7 @@
             <li><a>Week04</a></li>
             <li><a href="ProjectA/home.php">Week05</a></li>
             <li><a href="./Week06/team06.php">Team Week06</a></li>
-            <li><a href="./Week07/login.php">Team Week07</a></li>
+            <li><a href="./Week07/team07.php">Team Week07</a></li>
             <li><a>Week08</a></li>
             <li><a>Week09</a></li>
             <li><a>Week10</a></li>
