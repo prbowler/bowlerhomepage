@@ -27,8 +27,9 @@ if ($valid === true) {
     $stmt->execute();
 }
 
-$new_page = "login.php";
+echo "End";
+/*$new_page = "login.php";
 
 header("Location: $new_page");
 die();
-
+*/
