@@ -11,7 +11,7 @@ if ($user === 0) {
     include "login.php";
 } else {
     $username = $db->query('SELECT username, id FROM user_password WHERE id = '.$user.'');
-    echo "Welcome User $username[0]";
+    var_dump($username);
 }
 
 
