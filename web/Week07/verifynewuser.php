@@ -2,7 +2,7 @@
 //session_start();
 
 require "connect-db-ol.php";
-require "password.php";
+//require "password.php";
 
 $username = htmlspecialchars($_POST["username"]);
 $pw = htmlspecialchars($_POST["password"]);
