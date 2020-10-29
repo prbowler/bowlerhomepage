@@ -4,8 +4,8 @@
 $username = "";
 $password1 = "";
 $password2 = "";
-$usernameError = "valid";
-$passwordError = "valid";
+$usernameError = "";
+$passwordError = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST['username'])) {
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($_POST['password1'] !== $_POST['password2']) {
         $passwordError = "passwords do not match";
     }
-    if ($passwordError === "valid" && $usernameError === "valid") {
+    if ($passwordError === "" && $usernameError === "") {
        $password = $password1;
        validateNewUser($username, $password);
     }
