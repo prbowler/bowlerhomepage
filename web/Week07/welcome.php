@@ -13,7 +13,7 @@ if ($user === 0) {
     $statement = $db->query('SELECT username FROM user_password WHERE id ='.$user.'');
     $results = $statement->fetchAll(PDO::FETCH_ASSOC);
     var_dump($results);
-    echo $results[0]['username'];
+    echo 'Welcome'.$results[0]['username'];
 }
 
 
