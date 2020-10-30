@@ -33,7 +33,7 @@ if ($user === 0) {
     </div>
     <div>
         <h1 id="store-name">PB Survival Supplies</h1>
-        <ul id="main-menu">
+        <ul id="main-menu" class="right">
             <li><a href="home.php">Home</a></li>
             <?php echo $accountLink; ?>
             <li><a href="cart.php">Cart</a></li>
@@ -41,7 +41,7 @@ if ($user === 0) {
         </ul>
     </div>
     <div>
-        <ul id="menu">
+        <ul id="menu" class="left">
             <li><a href="food.php">Survival Food</a></li>
             <li><a href="produce.php">Fresh Produce</a></li>
             <li><a href="supplies.php">Survival Supplies</a></li>
