@@ -108,6 +108,12 @@ li a:hover {
         margin: 6px 0;
     }
 
+    #menu_icon {
+        position:fixed;
+        top:10px;
+        right:15px;
+    }
+
     .right {
         display: none;
         position: absolute;
@@ -118,12 +124,11 @@ li a:hover {
         z-index: 1;
     }
 
-    div:hover .right {
+    menu_icon:hover .right {
         display: block;
     }
 
     .left {
-        position: absolute;
         display: inline-block;
         background-color: #634848;
         max-width: 100px;
