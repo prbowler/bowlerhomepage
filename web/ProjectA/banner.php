@@ -37,13 +37,13 @@ if ($user === 0) {
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
+            <ul id="main-menu" class="right">
+                <li><a href="home.php">Home</a></li>
+                <?php echo $accountLink; ?>
+                <li><a href="cart.php">Cart</a></li>
+                <li><a href="checkout.php">Checkout</a></li>
+            </ul>
         </div>
-        <ul id="main-menu" class="right">
-            <li><a href="home.php">Home</a></li>
-            <?php echo $accountLink; ?>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="checkout.php">Checkout</a></li>
-        </ul>
     </div>
     <div id="product_menu">
         <ul id="menu" class="left">
