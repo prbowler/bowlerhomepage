@@ -8,3 +8,10 @@ body {
     color:red;
     float:right;
 }
+
+@media screen and (max-width: 900px) {
+    #main-message {
+        font-size:50px;
+        color:red;
+    }
+}
