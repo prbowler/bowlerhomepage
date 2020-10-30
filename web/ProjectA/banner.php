@@ -33,9 +33,11 @@ if ($user === 0) {
     </div>
     <div>
         <h1 id="store-name">PB Survival Supplies</h1>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <div id="menu_icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <ul id="main-menu" class="right">
             <li><a href="home.php">Home</a></li>
             <?php echo $accountLink; ?>
