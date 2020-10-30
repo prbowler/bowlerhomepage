@@ -46,6 +46,7 @@ if ($user === 0) {
         </div>
     </div>
     <div id="product_menu">
+        <span id="product_icon">...</span>
         <ul id="menu" class="left">
             <li><a href="food.php">Survival Food</a></li>
             <li><a href="produce.php">Fresh Produce</a></li>
