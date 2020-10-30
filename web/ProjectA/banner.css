@@ -112,7 +112,7 @@ Cows Photo by Lomig on Unsplash
 }
 
 #store-name {
-    position:fixed;
+    position:absolute;
     top:-5px;
     left:150px;
     border:black;
@@ -159,7 +159,7 @@ li a:hover {
     div.line {
         width: 35px;
         height: 5px;
-        background-color: whitesmoke;
+        background-color: green;
         margin: 6px 0;
     }
 
