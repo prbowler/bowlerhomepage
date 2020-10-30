@@ -7,13 +7,13 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Survival Food</title>
+    <title>Account Information</title>
     <link rel="stylesheet" type="text/css" href="card.css">
 </head>
 <body>
 <?php
     include "banner.php";
-    include "connect-db-ol.php";
+    require "connect-db-ol.php";
     $user = 0;
     if (isset($_SESSION['user'])) {
         $user = $_SESSION['user'];

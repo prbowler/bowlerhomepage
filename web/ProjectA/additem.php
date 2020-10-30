@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +12,24 @@
 <body>
 
 <?php
-
     require "connect-db-ol.php";
     include "banner.php";
+    $user = 0;
+    if (isset($_SESSION['user'])) {
+        $user = $_SESSION['user'];
+    } else {
+        include "login.php";
+    }
+    $cart = 0;
+    if (isset($_SESSION['cart'])) {
+        $cart = $_SESSION['cart'];
+    } else {
+        $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid)';
+        $stmt = $db->prepare($query);
+        $stmt->bindValue(':shopperid', $shopperid, PDO::PARAM_STR);
+        $stmt->execute();
+    }
+
     $id = htmlspecialchars($_GET['item_id']);
     $query = 'SELECT * FROM items WHERE id = ' . $id .'';
     $stmt = $db->prepare($query);
@@ -21,6 +40,7 @@
     $image = 'img/' . $item['image'] . '.jpg';
     $name = $item['name'];
     $price = $item['price'];
+
      echo
         '<div class="card">
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
@@ -30,6 +50,8 @@
      echo
         "<form action='additems.php' method='post' >
               <input type='hidden' name='item_id' value='$id'>
+              <input type='hidden' name='cart_id' value='$cart'>
+              <input type='hidden' name='user_id' value='$user'>
               <label for='quantity'>Quantity</label>
               <input type='number' name='quantity'>
               <input type='submit'>  

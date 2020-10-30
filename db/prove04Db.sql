@@ -41,4 +41,12 @@ ID SERIAL PRIMARY KEY,
 CartID INT references Cart(ID)
 );
 
+CREATE TABLE Cart_Details (
+    ID SERIAL PRIMARY KEY,
+    CartID INT REFERENCES Cart(ID),
+    ItemID INT REFERENCES Items(ID),
+    Quantity INT NOT NULL
+);
+
+
 
