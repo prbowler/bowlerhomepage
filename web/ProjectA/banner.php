@@ -7,7 +7,6 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Banner</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="banner.css">
 </head>
 <body>
@@ -34,7 +33,9 @@ if ($user === 0) {
     </div>
     <div>
         <h1 id="store-name">PB Survival Supplies</h1>
-        <i class="fa fa-bars"></i>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
         <ul id="main-menu" class="right">
             <li><a href="home.php">Home</a></li>
             <?php echo $accountLink; ?>
