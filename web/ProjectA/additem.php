@@ -15,6 +15,7 @@ session_start();
 
 <?php
     require "connect-db-ol.php";
+    require "get_cart.php";
     include "banner.php";
     error_log("additem",0);
     $user = 0;
@@ -60,29 +61,6 @@ session_start();
               <input type='submit'>  
         </form>";
 
-    function getCart($db, $shopperID) {
-        error_log("getCart",0);
-        try {
-            $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
-            $stmt = $db->prepare($query);
-            $stmt->execute();
-            $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            var_dump($carts);
-            if(sizeof($carts !== 0)) {
-                $cart = $carts[0]['id'];
-            } else {
-                $cart = 0;
-            }
-            var_dump($cart);
-        }
-        catch (PDOException $ex)
-        {
-            echo 'Error!: ' . $ex->getMessage();
-            die();
-        }
-
-        return $cart;
-    }
 ?>
 </body>
 </html>

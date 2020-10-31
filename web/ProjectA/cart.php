@@ -11,7 +11,7 @@
     include "banner.php";
     include "connect-db-ol.php";
 
-    foreach ($db->query('SELECT * FROM items as i JOIN cart as c on i.id = c.itemid WHERE c.shopperid = ' . $user . '') as $row) {
+    foreach ($db->query('SELECT * FROM items as i JOIN cart_details as cd on i.id = cd.itemid WHERE cd.shopperid = ' . $user . '') as $row) {
         $image = 'img/' . $row['image'] . '.jpg';
         $total = $row['price'] * $row['quantity'];
         $itemId = $row['itemid'];
