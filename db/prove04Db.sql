@@ -31,7 +31,8 @@ ShopperID INT references Shopper(ID)
 
 CREATE TABLE Cart (
 ID SERIAL PRIMARY KEY,
-ShopperID INT references Shopper(ID)
+ShopperID INT references Shopper(ID),
+Ordered BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE Checkout (

@@ -32,6 +32,7 @@ echo
      <td>$' . $runningTotal . '</td></table><br>';
 echo '
      <form action="purchase.php" method="post">
+        <input type="hidden" name="cart_id" value="'.$cart.'">
         <input type="hidden" name="shopper_id" value="'.$user.'">
         <label for="card_number">Card Number</label>
         <input type="number" name="card_number">
