@@ -10,9 +10,11 @@
 <?php
 include "banner.php";
 include "connect-db-ol.php";
+require "get_cart.php";
 
+$cart = getCart($db, $user);
 echo "<table><tr><th>Name</th><th>Price</th><th>Quantity</th><th>Total</th></tr>";
-foreach ($db->query('SELECT * FROM items as i JOIN cart as c on i.id = c.itemid WHERE c.shopperid = ' . $user . '') as $row) {
+foreach ($db->query('SELECT * FROM items as i JOIN cart_details as cd on i.id = cd.itemid WHERE cd.cartid = ' . $cart . '') as $row) {
     //$image = 'img/' . $row['image'] . '.jpg';
     $total = $row['price'] * $row['quantity'];
     $itemId = $row['itemid'];
