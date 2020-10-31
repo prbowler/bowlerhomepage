@@ -64,9 +64,9 @@ session_start();
         try {
             $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
             $stmt = $db->prepare($query);
-            $stmt->bindValue(':shopperid', $shopperID, PDO::PARAM_INT);
             $stmt->execute();
             $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            var_dump($carts);
             if(sizeof($carts !== 0)) {
                 $cart = $carts[0]['shopperid'];
             } else {
