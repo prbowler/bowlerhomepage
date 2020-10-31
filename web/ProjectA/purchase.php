@@ -25,7 +25,7 @@ function addCard($db, $cardNumber, $shopperID) {
 }
 
 function addOrder($db, $cart) {
-    $query = 'UPDATE cart SET ordered = TRUE WHERE cartid = :cartid';
+    $query = 'UPDATE cart SET ordered = TRUE WHERE id = :cartid';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':cartid', $cart, PDO::PARAM_INT);
     $stmt->execute();
