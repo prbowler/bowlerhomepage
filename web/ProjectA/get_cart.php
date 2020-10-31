@@ -20,7 +20,7 @@ function getCart($db, $shopperID) {
         die();
     }
     if (is_null($cart) || $cart === 0) {
-        $cart = newCart(db, $shopperID);
+        $cart = newCart($db, $shopperID);
     }
     return $cart;
 }
