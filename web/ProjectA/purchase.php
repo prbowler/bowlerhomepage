@@ -10,7 +10,7 @@ $cardNumber = htmlspecialchars($_POST['card_number']);
 if ($cardNumber !== '' && $shopperID !== '') {
     $cardID = addCard($db, $cardNumber, $shopperID);
     addOrder($db, $cart);
-    addCheckout($db, $cartID, $cardID);
+    addCheckout($db, $cart, $cardID);
     echo "Purchase complete<br>";
 }
 
