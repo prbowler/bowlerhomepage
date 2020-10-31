@@ -59,16 +59,24 @@ session_start();
         </form>";
 
     function getCart($shopperID) {
-        $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
-        $stmt = $db->prepeare($query);
-        $stmt->bindValue(':shopperid', $shopperID, PDO::PARAM_INT);
-        $stmt->execute();
-        $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        if(sizeof($carts !== 0)) {
-            $cart = $carts[0]['shoppedid'];
-        } else {
-            $cart = 0;
+        try {
+            $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
+            $stmt = $db->prepeare($query);
+            $stmt->bindValue(':shopperid', $shopperID, PDO::PARAM_INT);
+            $stmt->execute();
+            $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            if(sizeof($carts !== 0)) {
+                $cart = $carts[0]['shoppedid'];
+            } else {
+                $cart = 0;
+            }
         }
+        catch (PDOException $ex)
+        {
+            echo 'Error!: ' . $ex->getMessage();
+            die();
+        }
+
         return $cart;
     }
 ?>
