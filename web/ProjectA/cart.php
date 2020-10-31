@@ -13,7 +13,7 @@
     require "get_cart.php";
     $cart = getCart($db, $user);
 
-    foreach ($db->query('SELECT * FROM items as i JOIN cart_details as cd on i.id = cd.itemid WHERE cd.shopperid = ' . $user . '') as $row) {
+    foreach ($db->query('SELECT * FROM items as i JOIN cart_details as cd on i.id = cd.itemid WHERE cd.cartid = ' . $cart . '') as $row) {
         $image = 'img/' . $row['image'] . '.jpg';
         $total = $row['price'] * $row['quantity'];
         $itemId = $row['itemid'];
