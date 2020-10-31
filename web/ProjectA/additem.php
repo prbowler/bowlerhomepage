@@ -23,7 +23,7 @@ session_start();
     } else {
         include "login.php";
     }
-    $cart = getCarts($user);
+    $cart = getCart($user);
     if ($cart === 0) {
         $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid)';
         $stmt = $db->prepare($query);
