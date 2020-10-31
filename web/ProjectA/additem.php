@@ -16,6 +16,7 @@ session_start();
 <?php
     require "connect-db-ol.php";
     include "banner.php";
+    error_log("additem",0);
     $user = 0;
     if (isset($_SESSION['user'])) {
         $user = $_SESSION['user'];
@@ -41,7 +42,7 @@ session_start();
     $image = 'img/' . $item['image'] . '.jpg';
     $name = $item['name'];
     $price = $item['price'];
-
+     error_log("echo",0);
      echo
         '<div class="card">
                 <img src="' . $image .'"alt="'. $image .'" style="width:100%">
@@ -59,6 +60,7 @@ session_start();
         </form>";
 
     function getCart($shopperID) {
+        error_log("getCart",0);
         try {
             $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
             $stmt = $db->prepeare($query);
