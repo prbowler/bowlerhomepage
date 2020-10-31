@@ -26,10 +26,11 @@ function getCart($db, $shopperID) {
 }
 
 function newCart($db, $shopperID) {
-    $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid)';
+    $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid) RETURNING id';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':shopperid', $shopperID, PDO::PARAM_INT);
     $stmt->execute();
-    $cart = $stmt->lastInsertId('cart_id_seq');
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $cart = $result['id'];
     return $cart;
 }
