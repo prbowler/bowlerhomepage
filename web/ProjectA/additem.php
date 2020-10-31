@@ -63,7 +63,7 @@ session_start();
         error_log("getCart",0);
         try {
             $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
-            $stmt = $db->prepeare($query);
+            $stmt = $db->prepare($query);
             $stmt->bindValue(':shopperid', $shopperID, PDO::PARAM_INT);
             $stmt->execute();
             $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
