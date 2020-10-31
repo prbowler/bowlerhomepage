@@ -17,7 +17,6 @@ session_start();
     require "connect-db-ol.php";
     require "get_cart.php";
     include "banner.php";
-    error_log("additem",0);
     $user = 0;
     if (isset($_SESSION['user'])) {
         $user = $_SESSION['user'];

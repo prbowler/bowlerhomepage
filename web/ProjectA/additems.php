@@ -22,7 +22,7 @@ $stmt->bindValue(':item_id', $id, PDO::PARAM_INT);
 $stmt->bindValue(':quantity', $quantity, PDO::PARAM_INT);
 $stmt->execute();
 
-$new_page = "home.php";
+$new_page = "cart.php";
 
 header("Location: $new_page");
 die();
