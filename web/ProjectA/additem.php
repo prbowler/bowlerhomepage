@@ -24,7 +24,7 @@ session_start();
         include "login.php";
     }
     $cart = getCart($db, $user);
-    if ($cart === 0) {
+    if (is_null($cart) || $cart === 0) {
         echo "<script>alert('No cart')";
         $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid)';
         $stmt = $db->prepare($query);
