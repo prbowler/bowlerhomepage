@@ -37,7 +37,8 @@ Ordered BOOLEAN DEFAULT FALSE
 
 CREATE TABLE Checkout (
 ID SERIAL PRIMARY KEY,
-CartID INT references Cart(ID)
+CartID INT references Cart(ID),
+CardID INT references Card(ID)
 );
 
 CREATE TABLE Cart_Details (
