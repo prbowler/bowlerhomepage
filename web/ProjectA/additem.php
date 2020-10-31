@@ -23,13 +23,13 @@ session_start();
     } else {
         include "login.php";
     }
-    $cart = getCart($user);
+    $cart = getCart($db, $user);
     if ($cart === 0) {
         $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid)';
         $stmt = $db->prepare($query);
         $stmt->bindValue(':shopperid', $shopperid, PDO::PARAM_STR);
         $stmt->execute();
-        $cart = getCart($user);
+        $cart = getCart($db, $user);
     }
 
     $id = htmlspecialchars($_GET['item_id']);
