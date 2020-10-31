@@ -9,7 +9,9 @@
 
 <?php
     include "banner.php";
-    include "connect-db-ol.php";
+    require "connect-db-ol.php";
+    require "get_cart.php";
+    $cart = getCart($db, $user);
 
     foreach ($db->query('SELECT * FROM items as i JOIN cart_details as cd on i.id = cd.itemid WHERE cd.shopperid = ' . $user . '') as $row) {
         $image = 'img/' . $row['image'] . '.jpg';

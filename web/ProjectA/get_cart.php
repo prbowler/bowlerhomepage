@@ -19,6 +19,17 @@ function getCart($db, $shopperID) {
         echo 'Error!: ' . $ex->getMessage();
         die();
     }
+    if (is_null($cart) || $cart === 0) {
+        $cart = newCart(db, $shopperID);
+    }
+    return $cart;
+}
 
+function newCart($db, $shopperID) {
+    $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid)';
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':shopperid', $shopperID, PDO::PARAM_INT);
+    $stmt->execute();
+    $cart = $stmt->lastInsertId('cart_id_seq');
     return $cart;
 }
