@@ -59,8 +59,7 @@ session_start();
               <input type='submit'>  
         </form>";
 
-    function getCart($shopperID) {
-        require "connect-db-ol.php";
+    function getCart($db, $shopperID) {
         error_log("getCart",0);
         try {
             $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
@@ -69,7 +68,7 @@ session_start();
             $stmt->execute();
             $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             if(sizeof($carts !== 0)) {
-                $cart = $carts[0]['shoppedid'];
+                $cart = $carts[0]['shopperid'];
             } else {
                 $cart = 0;
             }
