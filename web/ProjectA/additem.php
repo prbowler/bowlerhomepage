@@ -69,7 +69,7 @@ session_start();
             $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             var_dump($carts);
             if(sizeof($carts !== 0)) {
-                $cart = $carts[0]['shopperid'];
+                $cart = $carts[0]['id'];
             } else {
                 $cart = 0;
             }
