@@ -25,6 +25,7 @@ session_start();
     }
     $cart = getCart($db, $user);
     if ($cart === 0) {
+        echo "<script>alert('No cart')";
         $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid)';
         $stmt = $db->prepare($query);
         $stmt->bindValue(':shopperid', $shopperid, PDO::PARAM_STR);
