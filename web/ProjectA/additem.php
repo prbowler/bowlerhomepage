@@ -31,7 +31,7 @@ session_start();
         $stmt->execute();
         $cart = getCart($db, $user);
     }
-
+    echo $cart;
     $id = htmlspecialchars($_GET['item_id']);
     $query = 'SELECT * FROM items WHERE id = ' . $id .'';
     $stmt = $db->prepare($query);
@@ -66,7 +66,7 @@ session_start();
             $stmt = $db->prepare($query);
             $stmt->execute();
             $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            var_dump($carts);
+            //var_dump($carts);
             if(sizeof($carts !== 0)) {
                 $cart = $carts[0]['shopperid'];
             } else {
