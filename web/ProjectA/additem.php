@@ -60,6 +60,7 @@ session_start();
         </form>";
 
     function getCart($shopperID) {
+        require "connect-db-ol.php";
         error_log("getCart",0);
         try {
             $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
