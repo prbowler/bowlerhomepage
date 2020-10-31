@@ -24,4 +24,3 @@ if ($valid === true) {
     include 'login.php';
 }
 
-?>

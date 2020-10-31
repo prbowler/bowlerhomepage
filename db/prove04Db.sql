@@ -23,16 +23,14 @@ Address VARCHAR(100),
 Password VARCHAR(50)
 );
 
-CREATE TABLE Cart (
-ID SERIAL PRIMARY KEY,
-ItemID INT references Items(ID),
-Quantity INT NOT NULL,
-ShopperID INT references Shopper(ID)
-);
-
 CREATE TABLE Card (
 ID SERIAL PRIMARY KEY,
 Number VARCHAR(50) NOT NULL,
+ShopperID INT references Shopper(ID)
+);
+
+CREATE TABLE Cart (
+ID SERIAL PRIMARY KEY,
 ShopperID INT references Shopper(ID)
 );
 

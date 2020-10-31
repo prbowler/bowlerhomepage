@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+//
+//$password = password_hash($pw, PASSWORD_DEFAULT);
 require "connect-db-ol.php";
 $username = htmlspecialchars($_POST["username"]);
 $password = htmlspecialchars($_POST["password"]);

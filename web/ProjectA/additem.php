@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
 ?>
 
 <!DOCTYPE html>
@@ -20,14 +22,13 @@ session_start();
     } else {
         include "login.php";
     }
-    $cart = 0;
-    if (isset($_SESSION['cart'])) {
-        $cart = $_SESSION['cart'];
-    } else {
+    $cart = getCarts($user);
+    if ($cart === 0) {
         $query = 'INSERT INTO cart(shopperid) VALUES (:shopperid)';
         $stmt = $db->prepare($query);
         $stmt->bindValue(':shopperid', $shopperid, PDO::PARAM_STR);
         $stmt->execute();
+        $cart = getCart($user);
     }
 
     $id = htmlspecialchars($_GET['item_id']);
@@ -56,6 +57,20 @@ session_start();
               <input type='number' name='quantity'>
               <input type='submit'>  
         </form>";
+
+    function getCart($shopperID) {
+        $query = 'SELECT * FROM cart WHERE shopperid = '.$shopperID.'';
+        $stmt = $db->prepeare($query);
+        $stmt->bindValue(':shopperid', $shopperID, PDO::PARAM_INT);
+        $stmt->execute();
+        $carts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if(sizeof($carts !== 0)) {
+            $cart = $carts[0]['shoppedid'];
+        } else {
+            $cart = 0;
+        }
+        return $cart;
+    }
 ?>
 </body>
 </html>
