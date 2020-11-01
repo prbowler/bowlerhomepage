@@ -34,8 +34,12 @@ if ($valid === true) {
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     $user = $result['id'];
     $_SESSION['user'] = $user;
+    $new_page = "home.php";
+    header("Location: $new_page");
+} else {
+    echo '<script>alert("Username has been used")</script>';
+    $new_page = "newuser.php";
+    header("Location: $new_page");
 }
 
-$new_page = "home.php";
-header("Location: $new_page");
 die();
