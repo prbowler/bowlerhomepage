@@ -33,7 +33,7 @@ if ($user === 0) {
     </div>
     <div>
         <h1 id="store-name">PB Survival Supplies</h1>
-        <div id="menu_icon">
+        <div id="main_menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -45,7 +45,9 @@ if ($user === 0) {
             </ul>
         </div>
         <div id="product_menu">
-            <span id="product_icon">...</span>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
             <ul id="menu" class="left">
                 <li><a href="food.php">Survival Food</a></li>
                 <li><a href="produce.php">Fresh Produce</a></li>
