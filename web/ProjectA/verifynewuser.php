@@ -37,6 +37,5 @@ if ($valid === true) {
 }
 
 $new_page = "home.php";
-
 header("Location: $new_page");
 die();

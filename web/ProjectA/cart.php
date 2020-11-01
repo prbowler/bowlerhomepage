@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Canning Supplies</title>
+    <title>Cart</title>
     <link rel="stylesheet" type="text/css" href="cart.css">
 </head>
 <body>

@@ -23,6 +23,5 @@ $stmt->bindValue(':cartid', $cartID, PDO::PARAM_STR);
 $stmt->execute();
 
 $new_page = "cart.php";
-
 header("Location: $new_page");
 die();

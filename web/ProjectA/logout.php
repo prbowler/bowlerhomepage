@@ -2,5 +2,6 @@
 session_start();
 session_unset();
 session_destroy();
-include 'home.php';
+$new_page = "home.php";
+header("Location: $new_page");
 ?>

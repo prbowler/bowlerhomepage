@@ -18,9 +18,11 @@ foreach ($results as $row) {
 }
 if ($valid === true) {
     $_SESSION['user'] = $user;
-    include 'home.php';
+    $new_page = "home.php";
+    header("Location: $new_page");
 } else {
     echo '<script>alert("Password is incorrect")</script>';
-    include 'login.php';
+    $new_page = "login.php";
+    header("Location: $new_page");
 }
 

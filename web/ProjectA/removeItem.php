@@ -20,7 +20,6 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 
 $new_page = "cart.php";
-
 header("Location: $new_page");
 die();
 
