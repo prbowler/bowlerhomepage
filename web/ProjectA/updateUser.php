@@ -1,10 +1,13 @@
 <?php
-$user = htmlspecialchars($_POST["username"]);
+$user = htmlspecialchars($_POST["user"]);
 $username = htmlspecialchars($_POST["username"]);
 $firstname = htmlspecialchars($_POST["firstname"]);
 $lastname = htmlspecialchars($_POST["lastname"]);
 $email = htmlspecialchars($_POST["email"]);
 $address = htmlspecialchars($_POST["address"]);
+
+//$query = 'UPDATE cart_details SET quantity = :quantity WHERE itemid = :item_id AND cartid = :cartid';
+//$stmt = $db->prepare($query);
 
 $query = 'UPDATE shopper SET username = :username, firstname = :firstname, lastname = :lastname, email = :email, address = :address WHERE id = :id';
 $stmt = $db->prepare($query);
