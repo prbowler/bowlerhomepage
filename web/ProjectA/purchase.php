@@ -12,6 +12,7 @@ if ($cardNumber !== '' && $shopperID !== '') {
     addOrder($db, $cart);
     addCheckout($db, $cart, $cardID);
     echo "<br>Purchase complete<br>";
+    echo "Thank you for your purchase<br>";
 } else {
     $new_page = "checkout.php";
     header("Location: $new_page");
