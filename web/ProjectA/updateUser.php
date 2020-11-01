@@ -1,7 +1,7 @@
 <?php
 require "connect-db-ol.php";
 
-$user = htmlspecialchars($_POST["user"]);
+$user = htmlspecialchars($_POST["user_id"]);
 $username = htmlspecialchars($_POST["username"]);
 $firstname = htmlspecialchars($_POST["firstname"]);
 $lastname = htmlspecialchars($_POST["lastname"]);
