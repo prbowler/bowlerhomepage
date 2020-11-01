@@ -9,9 +9,10 @@ if (isset($_SESSION['user'])) {
 require "connect-db-ol.php";
 
 $id = htmlspecialchars($_GET['item_id']);
-$shopperid = $user;
+//$shopperid = $user;
+$cart = getCart($db, $user);
 
-$query = 'DELETE FROM cart WHERE itemid = ' . $id . ' AND shopperid = ' . $shopperid . '';
+$query = 'DELETE FROM cart_details WHERE itemid = ' . $id . ' AND cartid = ' . $cart . '';
 $stmt = $db->prepare($query);
 //$stmt = $db->prepare('INSERT INTO cart(itemid, quantity, shopperid) VALUES (:item_id, :quantity, :shopperid);');
 //$stmt->bindValue(':item_id', $id, PDO::PARAM_INT);
