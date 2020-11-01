@@ -11,7 +11,7 @@ $valid = false;
 $user = 0;
 
 foreach ($results as $row) {
-    if ($row['username'] == $username_submitted && $row['password'] == $password_submitted) {
+    if ($row['username'] == $username_submitted && password_verify($password_submitted, $row['password'])) {
         $valid = true;
         $user = $row['id'];
     }
