@@ -1,4 +1,6 @@
 <?php
+require "connect-db-ol.php";
+
 $user = htmlspecialchars($_POST["user"]);
 $username = htmlspecialchars($_POST["username"]);
 $firstname = htmlspecialchars($_POST["firstname"]);
