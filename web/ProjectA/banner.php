@@ -45,9 +45,9 @@ if ($user === 0) {
             </ul>
         </div>
         <div id="product_menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
             <ul id="menu" class="left">
                 <li><a href="food.php">Survival Food</a></li>
                 <li><a href="produce.php">Fresh Produce</a></li>
