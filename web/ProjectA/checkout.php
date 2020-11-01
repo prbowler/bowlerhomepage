@@ -45,7 +45,7 @@ echo '
         <input type="hidden" name="shopper_id" value="'.$user.'">
         <label for="card_number">Card Number</label>
         <input type="number" name="card_number">
-        <input type="submit" value="Purchase">   
+        <input type="submit" value="Purchase" class="purchase">   
      </form>';
 ?>
 </body>
