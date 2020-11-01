@@ -27,6 +27,7 @@ session_start();
              <form>
              <h2>Account information</h2>
              <div id="customer">
+                <input type="hidden" value="'.$user.'" name="user_id">
                 <label for="username">Username</label>
                 <input id="username" name="username" type="text" value="' . $row["username"] .'"><br>
                 <label for="firstname">First Name</label>
