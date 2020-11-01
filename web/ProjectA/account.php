@@ -37,7 +37,7 @@ session_start();
                 <input id="email" name="email" type="text" value="' . $row["email"] . '"><br>
                 <label for="address">Address</label>
                 <textarea id="address" name="address" rows="4" cols="50">' . $row["address"] . '</textarea><br>
-                <input id="submit" type="submit">
+                <input id="submit" type="submit" value="Update">
             </div>
             </form>';
     }
