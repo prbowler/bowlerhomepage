@@ -8,6 +8,7 @@
 <body>
 
 <?php
+session_start();
 include "banner.php";
 include "connect-db-ol.php";
 require "get_cart.php";
