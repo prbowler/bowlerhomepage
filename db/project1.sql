@@ -20,7 +20,7 @@ FirstName VARCHAR(50),
 LastName VARCHAR(50),
 Email VARCHAR(50),
 Address VARCHAR(100),
-Password VARCHAR(50)
+Password VARCHAR(255)
 );
 
 CREATE TABLE Card (

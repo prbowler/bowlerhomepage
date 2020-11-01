@@ -1,7 +1,6 @@
 <?php
 session_start();
-//
-//$password = password_hash($pw, PASSWORD_DEFAULT);
+
 require "connect-db-ol.php";
 $username = htmlspecialchars($_POST["username"]);
 $pw = htmlspecialchars($_POST["password"]);
@@ -23,7 +22,7 @@ foreach ($results as $row) {
     }
 }
 if ($valid === true) {
-    $query = 'INSERT INTO shopper(username, firstname, lastname, email, address, password) VALUES (:username, :firstname, :lastname, :email, :address, :password)';
+    $query = 'INSERT INTO shopper(username, firstname, lastname, email, address, password) VALUES (:username, :firstname, :lastname, :email, :address, :password) RETURNING id';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':username', $username, PDO::PARAM_STR);
     $stmt->bindValue(':firstname', $firstname, PDO::PARAM_STR);
@@ -32,6 +31,9 @@ if ($valid === true) {
     $stmt->bindValue(':address', $address, PDO::PARAM_STR);
     $stmt->bindValue(':password', $password, PDO::PARAM_STR);
     $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $user = $result['id'];
+    $_SESSION['user'] = $user;
 }
 
 $new_page = "home.php";
