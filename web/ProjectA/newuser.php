@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="newuser.css">
 </head>
 <body>
+    <header>
+        <?php include "banner.php";?>
+    </header>
      <form action="verifynewuser.php" method="post">
      <h2>Account information</h2>
      <div id="customer">
