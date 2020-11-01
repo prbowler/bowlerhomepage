@@ -44,16 +44,16 @@ if ($user === 0) {
                 <li><a href="checkout.php">Checkout</a></li>
             </ul>
         </div>
-    </div>
-    <div id="product_menu">
-        <span id="product_icon">...</span>
-        <ul id="menu" class="left">
-            <li><a href="food.php">Survival Food</a></li>
-            <li><a href="produce.php">Fresh Produce</a></li>
-            <li><a href="supplies.php">Survival Supplies</a></li>
-            <li><a href="canning.php">Canning Supplies</a></li>
-            <li><a href="guides.php">Guides</a></li>
-        </ul>
+        <div id="product_menu">
+            <span id="product_icon">...</span>
+            <ul id="menu" class="left">
+                <li><a href="food.php">Survival Food</a></li>
+                <li><a href="produce.php">Fresh Produce</a></li>
+                <li><a href="supplies.php">Survival Supplies</a></li>
+                <li><a href="canning.php">Canning Supplies</a></li>
+                <li><a href="guides.php">Guides</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 
