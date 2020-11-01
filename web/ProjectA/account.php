@@ -24,7 +24,7 @@ session_start();
     foreach ($db->query('SELECT * FROM shopper as s WHERE id = ' . $user .'') as $row) {
         echo
             '
-             <form>
+             <form action="updateUser.php" method="post">
              <h2>Account information</h2>
              <div id="customer">
                 <input type="hidden" value="'.$user.'" name="user_id">
