@@ -6,13 +6,14 @@ $lastname = htmlspecialchars($_POST["lastname"]);
 $email = htmlspecialchars($_POST["email"]);
 $address = htmlspecialchars($_POST["address"]);
 
-$query = 'UPDATE shopper(username, firstname, lastname, email, address) VALUES (:username, :firstname, :lastname, :email, :address)';
+$query = 'UPDATE shopper SET username = :username, firstname = :firstname, lastname = :lastname, email = :email, address = :address WHERE id = :id';
 $stmt = $db->prepare($query);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 $stmt->bindValue(':firstname', $firstname, PDO::PARAM_STR);
 $stmt->bindValue(':lastname', $lastname, PDO::PARAM_STR);
 $stmt->bindValue(':email', $email, PDO::PARAM_STR);
 $stmt->bindValue(':address', $address, PDO::PARAM_STR);
+$stmt->bindValue(':id', $user, PDO::PARAM_INT);
 $stmt->execute();
 
 $new_page = "home.php";
