@@ -11,12 +11,12 @@
     include "connect-db-ol.php";
     echo
     '<form action="verifyuser.php" method="post">
-         <label for="username">Username</label><br>
-         <input type="text" name="username"><br>
-         <label for="password">Password</label><br>
-         <input type="password" name="password"><br>
-         <input type="submit"><br>
-         <a href="newuser.php">New User</a><br>
+         <label for="username">Username</label>
+         <input type="text" name="username">
+         <label for="password">Password</label>
+         <input type="password" name="password">
+         <input type="submit" class="submit">
+         <a href="newuser.php">New User</a>
      </form>';
 ?>
 </body>
