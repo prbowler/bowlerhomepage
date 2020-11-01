@@ -7,6 +7,7 @@ if (isset($_SESSION['user'])) {
     die();
 }
 require "connect-db-ol.php";
+require "get_cart.php";
 
 $id = htmlspecialchars($_GET['item_id']);
 //$shopperid = $user;
