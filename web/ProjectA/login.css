@@ -13,3 +13,10 @@ input {
     display:block;
     margin-top:20px;
 }
+
+.new_user {
+    display:block;
+    margin-top:20px;
+    margin-left:10px;
+    color:green;
+}

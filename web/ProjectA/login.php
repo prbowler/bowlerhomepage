@@ -8,7 +8,6 @@
 <body>
 <?php
     include "banner.php";
-    include "connect-db-ol.php";
     echo
     '<form action="verifyuser.php" method="post">
          <label for="username">Username</label>

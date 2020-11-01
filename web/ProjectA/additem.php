@@ -21,7 +21,8 @@ session_start();
     if (isset($_SESSION['user'])) {
         $user = $_SESSION['user'];
     } else {
-        include "login.php";
+        $new_page = "login.php";
+        header("Location: $new_page");
     }
     $cart = getCart($db, $user);
     if (is_null($cart) || $cart === 0) {
