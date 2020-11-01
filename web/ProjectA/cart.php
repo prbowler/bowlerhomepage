@@ -8,9 +8,17 @@
 <body>
 
 <?php
+    session_start();
     include "banner.php";
     require "connect-db-ol.php";
     require "get_cart.php";
+    $user = 0;
+    if (isset($_SESSION['user'])) {
+        $user = $_SESSION['user'];
+    } else {
+        $new_page = "login.php";
+        header("Location: $new_page");
+    }
     $cart = getCart($db, $user);
 
     foreach ($db->query('SELECT * FROM items as i JOIN cart_details as cd on i.id = cd.itemid WHERE cd.cartid = ' . $cart . '') as $row) {
