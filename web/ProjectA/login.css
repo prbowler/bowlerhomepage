@@ -1,5 +1,5 @@
 label {
-    display:inline-block;
+    display:block;
     margin-top:10px;
     margin-left:10px;
 }
@@ -9,8 +9,7 @@ input {
     margin-top:-20px;
 }
 
-a {
+.submit {
     display:block;
-    margin-top:10px;
-    margin-left:10px;
+    margin-top:20px;
 }

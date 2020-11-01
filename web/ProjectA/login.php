@@ -16,7 +16,7 @@
          <label for="password">Password</label>
          <input type="password" name="password">
          <input type="submit" class="submit">
-         <a href="newuser.php">New User</a>
+         <a href="newuser.php" class="submit">New User</a>
      </form>';
 ?>
 </body>
