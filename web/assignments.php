@@ -25,6 +25,7 @@
             <li><a href="./ProjectA/home.php">PB Survival Supplies</a></li>
             <li><a href="https://bowlerhomeautomation.herokuapp.com/">Bowler Home Automation</a></li>
             <li><a href="https://projectrook.herokuapp.com/">PB Rook Game</a></li>
+            <li><a href="https://htmlpreview.github.io/?https://github.com/prbowler/ZenGarden/blob/master/index.html">ZenGarden</a></li>
         </ul>
     </div>
 </section>
