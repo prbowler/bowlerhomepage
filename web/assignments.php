@@ -20,12 +20,12 @@
 <section id="main">
     <div id="assignments">
         <h2>Projects</h2>
-        <ul>
-            <li><a href="Week03/Ponder/shopping.php">PB Groceries</a></li>
-            <li><a href="./ProjectA/home.php">PB Survival Supplies</a></li>
+        <ul>          
             <li><a href="https://bowlerhomeautomation.herokuapp.com/">Bowler Home Automation</a></li>
+            <li><a href="./ProjectA/home.php">PB Survival Supplies</a></li>
             <li><a href="https://projectrook.herokuapp.com/">PB Rook Game</a></li>
             <li><a href="https://bowlerzengarden.herokuapp.com/">ZenGarden</a></li>
+            <li><a href="Week03/Ponder/shopping.php">PB Groceries</a></li>
         </ul>
     </div>
 </section>
