@@ -37,8 +37,8 @@
         <h2>Here are some of my projects</h2>
         <ul>          
             <li><a href="https://bowlerhomeautomation.herokuapp.com/">A home automation with STT and TTS system built with PHP, JavaScript, Python, CSS, HTML, and MySQL.</a></li>
-            <li><a href="./ProjectA/home.php">A store front built with PHP, JavaScript, CSS, and HTML.</a></li>
-            <li><a href="https://projectrook.herokuapp.com/">A Rook game built with Node.js, EJS, and PosgreSQL.</a></li>
+            <li><a href="./ProjectA/home.php">A store front built with PHP, JavaScript, PostgeSQL, CSS, and HTML.</a></li>
+            <li><a href="https://projectrook.herokuapp.com/">A Rook game built with Node.js, EJS, and PostgreSQL.</a></li>
             <li><a href="https://bowlerzengarden.herokuapp.com/">ZenGarden styling using CSS and SCSS.</a></li>
         </ul>
     </div>
