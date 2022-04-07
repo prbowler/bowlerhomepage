@@ -24,6 +24,10 @@ header {
 	border-color:rgba(88.2, 78.8, 68.6, .50);
 }
 
+#intro{
+    display:block;
+}
+
 #main {
 	display:inline-flex;
 	flex-wrap: wrap;
