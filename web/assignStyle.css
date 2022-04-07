@@ -9,6 +9,10 @@ header {
     height:150px;
 }
 
+#intro{
+    display:block;
+}
+
 #logo {
     display: inline-flex;
 }
