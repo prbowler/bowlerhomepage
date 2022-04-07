@@ -25,7 +25,7 @@ if ($user === 0) {
 ?>
 <div id="banner">
     <div id="logo">
-        <a href="home.php">
+        <a href="https://bowlerhomepage.herokuapp.com/">
             <img class="logo" src="../img/logo.jpg" alt="Logo" height="50"
                  width="50">
         </a>
