@@ -26,6 +26,7 @@ header {
 
 #intro{
     display:block;
+	width:100%;
 }
 
 #main {
@@ -61,7 +62,7 @@ h1 {
 }
 
 h2 {
-	font-size:16px;
+	font-size:26px;
 }
 
 li {
