@@ -18,8 +18,11 @@
     </div>
 </header>
 <section id="main">
-    <h2> Hi my name is Philip Bowler</h2>
-    <h3> I enjoy Web Development both front-end and back-end.</h3> 
+    <div>
+        <h2> Hi my name is Philip Bowler</h2>
+        <h3> I enjoy Web Development both front-end and back-end.</h3> 
+    </div>
+    
     <div id="picture">
         <figure>
             <img src="img/me.jpg" alt="My wife and I" width="173" height="164" id="me">
