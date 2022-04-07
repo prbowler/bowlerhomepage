@@ -20,7 +20,7 @@
 <section id="main">
     <div id="intro">
         <h2> Hi my name is Philip Bowler</h2>
-        <h3> I enjoy Web Development both frontend and backend.</h3> 
+        <h3> I enjoy working on Web Development full stack, Raspberry Pi development, and Linux servers.</h3> 
     </div>
     
     <div id="picture">
@@ -36,10 +36,10 @@
     <div>
         <h2>Here are some of my projects</h2>
         <ul>          
-            <li><a href="https://bowlerhomeautomation.herokuapp.com/">A home automation system built with PHP, JavaScript, Python, CSS, HTML, and Mysql</a></li>
-            <li><a href="./ProjectA/home.php">A store front built with PHP, JavaScript, CSS, and HTML</a></li>
-            <li><a href="https://projectrook.herokuapp.com/">A Rook game built with Node.js, EJS, and PosgreSQL</a></li>
-            <li><a href="https://bowlerzengarden.herokuapp.com/">ZenGarden styling using CSS</a></li>
+            <li><a href="https://bowlerhomeautomation.herokuapp.com/">A home automation system built with PHP, JavaScript, Python, CSS, HTML, and MySQL.</a></li>
+            <li><a href="./ProjectA/home.php">A store front built with PHP, JavaScript, CSS, and HTML.</a></li>
+            <li><a href="https://projectrook.herokuapp.com/">A Rook game built with Node.js, EJS, and PosgreSQL.</a></li>
+            <li><a href="https://bowlerzengarden.herokuapp.com/">ZenGarden styling using CSS and SCSS.</a></li>
         </ul>
     </div>
 </section>
