@@ -20,7 +20,7 @@
 <section id="main">
     <div id="intro">
         <h2> Hi my name is Philip Bowler</h2>
-        <h3> I enjoy Web Development both front-end and back-end.</h3> 
+        <h3> I enjoy Web Development both frontend and backend.</h3> 
     </div>
     
     <div id="picture">
